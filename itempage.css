@@ -14,6 +14,12 @@ body{
     top: calc(50%-0.5em);
     /*vertical-align:top;*/
 }
+.reviewHeaderText{
+    font-size: 50;
+}
+.reviewBodyText{
+    font-size: 20;
+}
 .reviewRow1{
     color: #d7f4e3;
     background-color:#217844;
