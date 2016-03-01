@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<title>Simple BigSemantics Demo</title>
+	<title>Product Description Page</title>
 
 	<!-- non BigSemantics include statements -->
 	<script src="./BigSemanticsJavaScript/libraries/jquery-2.0.0.min.js"></script>
@@ -41,20 +41,42 @@
     
     <!-- Product info section -->
     <div id="productInfoPanel" class="infoPanel">
-        <!-- product image -->
-        <img id="productImage" class="infoPanelProductImage" src="testImage.jpg" alt="test image" >
         <!-- product name -->
         <span id="productName" class="infoPanelProductName">
         Product Name
         </span>
+        <!--product description-->
+        <span id="productDescription" class="infoPanelProductDescription">
+            Long product description lorum ipsum dolor sit amet,...<br>
+            -Specification 1<br>
+            -Specification 2<br>
+            ...<br>
+        </span>
         
     </div>
+    <!-- product image/rating block -->
+        <img id="productImage" class="infoPanelProductImage" src="testImage.jpg" alt="test image">
     
     <!-- Review Section -->
+    <!-- Review Ratings block-->
+    <div id="ratingsBlock" class="ratingsBlock">
+        <span id="ratingsBlockHeader" class="ratingsBlockHeader">
+            Product Reviews
+        </span>
+        <br>
+        <span id="ratingsBlockTotal" clas="ratingsBlockTotals">
+            1 Star Reviews (12345) <br>
+            2 Star Reviews (12345) <br>
+            3 Star Reviews (12345) <br>
+            4 Star Reviews (12345) <br>
+            5 Star Reviews (12345) <br>
+        </span>
+    </div>
+    
     <!-- Make room for up to 10 reviews -->
     <div id="reviewSection" class="reviews">
     <div id="reviewBlock0" class="reviewBlock">
-        <div class="reviewRow1">
+        <div class="reviewRow0">
             <span class="reviewHeaderText">
                 Review Title
             </span>
@@ -67,14 +89,11 @@
                 Review body lorum ipsum... <br>
                 Review body lorum ipsum... <br>
                 Review body lorum ipsum... <br>
-                </span>
-            <span class="reviewHelpfulText">
-                10 people found this review helpful; did you?
             </span>
             </div>
     </div>
     <div id="reviewBlock1" class="reviewBlock">
-        <div class="reviewRow2">
+        <div class="reviewRow1">
             <span class="reviewHeaderText">
                 Review Title
             </span>
@@ -91,7 +110,7 @@
         </div>
     </div>
     <div id="reviewBlock2" class="reviewBlock">
-        <div class="reviewRow3">
+        <div class="reviewRow2">
             <span class="reviewHeaderText">
                 Review Title
             </span>
@@ -108,7 +127,7 @@
         </div>
     </div>
         <div id="reviewBlock3" class="reviewBlock">
-        <div class="reviewRow1">
+        <div class="reviewRow0">
             <span class="reviewHeaderText">
                 Review Title
             </span>
@@ -125,7 +144,7 @@
             </div>
     </div>
     <div id="reviewBlock4" class="reviewBlock">
-        <div class="reviewRow2">
+        <div class="reviewRow1">
             <span class="reviewHeaderText">
                 Review Title
             </span>
@@ -142,7 +161,7 @@
         </div>
     </div>
     <div id="reviewBlock5" class="reviewBlock">
-        <div class="reviewRow3">
+        <div class="reviewRow2">
             <span class="reviewHeaderText">
                 Review Title
             </span>
@@ -159,7 +178,7 @@
         </div>
     </div>
         <div id="reviewBlock6" class="reviewBlock">
-        <div class="reviewRow1">
+        <div class="reviewRow0">
             <span class="reviewHeaderText">
                 Review Title
             </span>
@@ -176,7 +195,7 @@
             </div>
     </div>
     <div id="reviewBlock7" class="reviewBlock">
-        <div class="reviewRow2">
+        <div class="reviewRow1">
        <span class="reviewHeaderText">
                 Review Title
             </span>
@@ -193,7 +212,7 @@
         </div>
     </div>
     <div id="reviewBlock8" class="reviewBlock">
-        <div class="reviewRow3">
+        <div class="reviewRow2">
             <span class="reviewHeaderText">
                 Review Title
             </span>
@@ -210,7 +229,7 @@
         </div>
     </div>
          <div id="reviewBlock9" class="reviewBlock">
-        <div class="reviewRow1">
+        <div class="reviewRow0">
             <span class="reviewHeaderText">
                 Review Title
             </span>
