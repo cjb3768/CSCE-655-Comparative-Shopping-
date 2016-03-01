@@ -1,0 +1,14 @@
+ ColorSheet.txt
+ Just lists colors from color scheme
+ 
+ White: white
+ Green 1:d7f4e3
+ Green 2:
+ Green 3:87deaa
+ Green 4:5fd38d
+ Green 5:
+ Green 6:
+ Green 7:217844
+ Green 8:
+ Green 9:
+ Black: black

@@ -1,0 +1,62 @@
+body{
+    font-family: sans-serif;
+    background-color:#d7f4e3;
+}
+.infoPanel{
+    background-color:#5fd38d;
+}
+.reviewBlock{
+    font-weight: bold;
+    border-color:black;
+    border:1px solid;
+    /*z-index:100;*/
+    margin-left:calc(50%-2em);
+    top: calc(50%-0.5em);
+    /*vertical-align:top;*/
+}
+.reviewRow1{
+    color: #d7f4e3;
+    background-color:#217844;
+}
+.reviewRow2{
+    background-color:#d7f4e3;
+}
+.reviewRow3{
+    background-color:#5fd38d;
+}
+
+.labelBar{
+    
+}
+
+.logoLabel{
+    color: #d7f4e3;
+    font-weight: bold;
+    font-size: 32;
+    background-color:#217844;
+    width:4em;
+    border-color:black;
+    border:1px solid;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align:center;
+    float:left;
+}
+
+.compareLabel{
+    color: #d7f4e3;
+    font-weight: bold;
+    font-size: 20;
+    background-color:#217844;
+    width:8em;
+    border-color:black;
+    border:1px solid;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align:center;
+    float:right;
+}
