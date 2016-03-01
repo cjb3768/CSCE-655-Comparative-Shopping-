@@ -1,24 +1,45 @@
 body{
     font-family: sans-serif;
     background-color:#d7f4e3;
+    display:grid;
+    grid-template-columns:15px auto 15px auto 15px auto;
+    grid-template-rows:auto 15px 80% 15px auto;
 }
 .infoPanel{
     background-color:#5fd38d;
+    padding-top: 2em;
+    grid-row-start:3;
+    grid-row-end:3;
+    grid-column-start:1;
+    grid-column-end:5;
 }
+.infoPanelProductImage{
+    
+}
+
+.infoPanelProductName{
+    font-size: 32px;
+    font-weight:bold;
+    grid-column-start:3;
+    grid-column-end:3;
+}
+
 .reviewBlock{
     font-weight: bold;
     border-color:black;
     border:1px solid;
-    /*z-index:100;*/
-    margin-left:calc(50%-2em);
-    top: calc(50%-0.5em);
+
+    top: calc(50%);
     /*vertical-align:top;*/
 }
 .reviewHeaderText{
-    font-size: 50;
+    font-size: 32px;
 }
 .reviewBodyText{
-    font-size: 20;
+    font-size: 20px;
+}
+.reviewRatingText{
+    font-size: 24px;
 }
 .reviewRow1{
     color: #d7f4e3;
@@ -48,7 +69,11 @@ body{
     padding-left: 2em;
     padding-right: 2em;
     text-align:center;
-    float:left;
+    grid-row-start:1;
+    grid-row-end:1;
+    grid-column-start:1;
+    grid-column-end:1;
+    /*object-position: top;*/
 }
 
 .compareLabel{
@@ -64,5 +89,25 @@ body{
     padding-left: 1em;
     padding-right: 1em;
     text-align:center;
-    float:right;
+    grid-row-start:1;
+    grid-row-end:1;
+    grid-column-start:5;
+    grid-column-end:5;
+    /*object-position:right;*/
+}
+
+.reviews{
+    grid-row-start:5;
+    grid-row-start:5;
+    grid-column-start:3;
+    grid-column-end:5;
+}
+
+.ratingsBlock{
+    background-color:#d7f4e3;
+    
+}
+
+#logo, #compareLabel{
+    /*display:inline-block;*/
 }
