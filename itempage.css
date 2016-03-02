@@ -3,11 +3,8 @@ body{
     font-size:16px;
     background-color:#d7f4e3;
     display:grid;
-    /*grid-template-columns:15px auto 15px auto 230px 15px 15px;*/
     grid-template-columns:1em 14em 1em auto 1em 13.375em 1em 1em;
     grid-template-rows:2em 2em 1em 2em 2em 4em 1em 4em 1em auto 1em auto;
-    /*grid-template-rows:30px 30px 15px 32px 30px 60px 15px 60px 15px auto 15px auto;
-    */
 }
 .infoPanel{
     background-color:#5fd38d;

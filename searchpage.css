@@ -1,0 +1,24 @@
+body{
+    font-family: sans-serif;
+    font-size:16px;
+    background-color:#d7f4e3;
+    display:grid;
+    /*grid-template-columns:logo filtersubcolumn divider divider searchbutton divider searchbar price divider divider comparebutton listimage divider divider;*/
+    grid-template-columns:2em 9em 1em 1em 6em 1em auto 13.375em 1em 1em 1em 12em 2em 2em;
+    /*grid-template-rows:logo searchbutton filters divider; not finished*/
+}
+
+.productListingBlock{
+    
+}
+
+.productListing{
+    
+}
+.productListingType1{
+    color: #d7f4e3;
+    background-color:#217844;
+}
+.productListingType2{
+    
+}
