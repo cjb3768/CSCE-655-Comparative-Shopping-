@@ -1,62 +1,117 @@
 body{
     font-family: sans-serif;
+    font-size:16px;
     background-color:#d7f4e3;
     display:grid;
-    grid-template-columns:15px auto 60% 15px auto 15px 15px;
-    grid-template-rows:30px 30px 15px auto 15px auto 15px auto;
+    /*grid-template-columns:15px auto 15px auto 230px 15px 15px;*/
+    grid-template-columns:1em 14em 1em auto 1em 13.375em 1em 1em;
+    grid-template-rows:2em 2em 1em 2em 2em 4em 1em 4em 1em auto 1em auto;
+    /*grid-template-rows:30px 30px 15px 32px 30px 60px 15px 60px 15px auto 15px auto;
+    */
 }
 .infoPanel{
     background-color:#5fd38d;
-    padding-top: 2em;
+    min-height: 100%;
+    min-width: 100%;
+    /*padding-top: 2em;
+    padding-bottom:2em;*/
     grid-row-start:3;
-    grid-row-end:3;
+    grid-row-end:11;
     grid-column-start:1;
-    grid-column-end:6;
+    grid-column-end:8;
 }
 .infoPanelProductImage{
     grid-row-start:4;
-    grid-row-end:4;
+    grid-row-end:10;
     grid-column-start:2;
     grid-column-end:2;
+    height:14em;
+    width:14em;
 }
 
 .infoPanelProductName{
-    font-size: 32px;
+    /*font-size: 32px;*/
+    font-size: 2em;
     font-weight:bold;
-    grid-column-start:3;
-    grid-column-end:3;
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:4;
+    grid-row-end:4;
 }
 
 .infoPanelProductDescription{
-    font-size: 24px;
-    
+    font-size: 1.5em; /*24px*/
+    grid-column-start:4;
+    grid-column-end:4;
+    grid-row-start:5;
+    grid-row-end:11;
+    width:100%;
+    height:100%;
 }
 
 .infoPanelProductPrice{
-    font-size:32px;
+    font-size:1.75em;
+    grid-column-start:5;
+    grid-column-end:6;
+    grid-row-start:4;
+    grid-row-end:4;
+}
+
+.infoPanelPurchaseButton{
+    background-color:white;
+    font-size:1.25em;
+    grid-column-start:5;
+    grid-column-end:6;
+    grid-row-start:6;
+    grid-row-end:6;
+    width:100%;
+    height:100%;    
 }
 
 .infoPanelCompareButton{
-    font-size:20px;
+    background-color:white;
+    font-size:1.25em;
+    grid-column-start:5;
+    grid-column-end:6;
+    grid-row-start:8;
+    grid-row-end:8;
+    width:100%;
+    height:100%;
 }
 
-.ratingsBlock{
+.infoPanelProductRatingBlock{
+    grid-column-start:2;
+    grid-column-end:2;
+    grid-row-start:10;
+    grid-row-end:10;
+}
+.infoPanelProductRatingText{
+    font-size:1.25em;
+}
+.reviewSummaryBlock{
     background-color:#d7f4e3;
-    grid-row-start:5;
-    grid-row-end:5;
+    grid-row-start:12;
+    grid-row-end:12;
     grid-column-start:2;
     grid-column-end:2;
 }
 
-.ratingsBlockHeader{
-    font-size:24px;
+.reviewSummaryBlockHeader{
+    font-size:1.5em;
 }
 
-.ratingsBlockTotals{
-    font-size:18px;
+.reviewSummaryBlockTotals{
+    font-size:1.125em;
 }
 
 .reviewBlock{
+    grid-row-start:12;
+    grid-row-end:12;
+    grid-column-start:4;
+    grid-column-end:8;
+}
+
+.productReview{
     border-color:black;
     border:1px solid;
 
@@ -64,13 +119,13 @@ body{
     /*vertical-align:top;*/
 }
 .reviewHeaderText{
-    font-size: 32px;
+    font-size: 2em;
 }
 .reviewBodyText{
-    font-size: 20px;
+    font-size: 1.25em;
 }
 .reviewRatingText{
-    font-size: 24px;
+    font-size: 2em;
 }
 .reviewRow0{
     color: #d7f4e3;
@@ -86,20 +141,22 @@ body{
 .logoLabel{
     color: #d7f4e3;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 2em;
     background-color:#217844;
-    width:4em;
+    /*width:8em;*/
+    width:100%;
+    height:100%;
     border-color:black;
     border:1px solid;
     /*padding-top: 1.5em;
     padding-bottom: 1.5em;*/
-    padding-left: 2em;
-    padding-right: 2em;
+    /*padding-left: 2em;
+    padding-right: 2em;*/
     text-align:center;
     grid-row-start:1;
     grid-row-end:2;
     grid-column-start:1;
-    grid-column-end:1;
+    grid-column-end:3;
     /*object-position: top;*/
     vertical-align:center;
 }
@@ -107,7 +164,7 @@ body{
 .compareLabel{
     color: #d7f4e3;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25em;
     background-color:#217844;
     border-color:black;
     border:1px solid;
@@ -118,16 +175,11 @@ body{
     grid-row-start:1;
     grid-row-end:1;
     grid-column-start:5;
-    grid-column-end:5;
+    grid-column-end:8;
     /*object-position:right;*/
 }
 
-.reviews{
-    grid-row-start:5;
-    grid-row-end:5;
-    grid-column-start:3;
-    grid-column-end:6;
-}
+
 
 #logo, #compareLabel{
     /*display:inline-block;*/
