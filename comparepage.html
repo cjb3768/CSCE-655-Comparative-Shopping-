@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<title>Simple BigSemantics Demo</title>
+	<title>Product Comparison Page</title>
 
 	<!-- non BigSemantics include statements -->
 	<script src="./BigSemanticsJavaScript/libraries/jquery-2.0.0.min.js"></script>
@@ -30,13 +30,446 @@
 </head>
 <body>
     <!--label buttons at top of page -->
-    <div id="labelBar" class:"labelBar">
     <div id="logo" class="logoLabel">
         GreenPU
     </div>
-    <div id="compareLabel" class="compareLabel">
-        Compare Items
+    <div id="productListingLabel" class="productListingLabel">
+        Product Search
     </div>
+    
+    <!--comparison chart specification list-->
+    <div id="specificationList" class="chartSpecificationList">
+        <div id="specChartHeader" class="chartSpecificationHeaderBlock">
+            Product Specification
+        </div>
+        
+        <div class="chartSpecificationNameBlock">
+            <div id="productSpec" class="chartSpecificationNameText">
+            Product Name
+            </div>
+        </div>
+        
+        <div class="chartSpecificationImageBlock">
+            <div class="dividerTop1">
+            </div>
+            <div class="chartSpecificationNameText">
+                Product Image
+            </div>
+           <br>
+           <div class="chartSpecificationBodyText"></div>
+            <div class="dividerBottom1">
+            </div>
+            </div>
+        
+        <div id="specChartSpec1" class="chartSpecificationEntryBlock2">
+            <div class="dividerTop2">
+            </div>
+            <div id="chartSpecification1Name" class="chartSpecificationNameText">
+                Specification 1
+            </div>
+            <div id="chartSpecification1Description" class="chartSpecificationBodyText">
+                Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom2">
+            </div>
+        </div>
+        
+        <div id="specChartSpec2" class="chartSpecificationEntryBlock1">
+            <div class="dividerTop1">
+            </div>
+            <div id="chartSpecification1Name" class="chartSpecificationNameText">
+                Specification 1
+            </div>
+            <div id="chartSpecification1Description" class="chartSpecificationBodyText">
+                Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+         <div id="specChartSpec3" class="chartSpecificationEntryBlock2">
+            <div class="dividerTop2">
+            </div>
+            <div id="chartSpecification1Name" class="chartSpecificationNameText">
+                Specification 1
+            </div>
+            <div id="chartSpecification1Description" class="chartSpecificationBodyText">
+                Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom2">
+            </div>
+        </div>
+        
+        <div id="specChartSpec4" class="chartSpecificationEntryBlock1">
+            <div class="dividerTop1">
+            </div>
+            <div id="chartSpecification1Name" class="chartSpecificationNameText">
+                Specification 1
+            </div>
+            <div id="chartSpecification1Description" class="chartSpecificationBodyText">
+                Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
     </div>
+    
+    <!--product listing columns-->
+    <div id="compareColumn1" class="productCompareColumn1">
+        <div id="columnRemoveButton1" class="productCompareRemoveButton">
+            Remove Product
+        </div>
+        
+        <div id="productName" class="productCompareSpecificationBlock2">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+        </div>
+        
+        <div id="columnImageBlock" class="productCompareImageBlock">
+            <div class="dividerTop1">
+            </div>
+            <img id="productImage" class="productComparePhoto" src="testImage.jpg" alt="test image">
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+        <div id="productSpecification1" class="productCompareSpecificationBlock2">
+            <div class="dividerTop2">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom2">
+            </div>
+        </div>
+        
+        <div id="productSpecification2" class="productCompareSpecificationBlock1">
+            <div class="dividerTop1">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+        <div id="productSpecification3" class="productCompareSpecificationBlock2">
+            <div class="dividerTop2">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom2">
+            </div>
+        </div>
+        
+        <div id="productSpecification4" class="productCompareSpecificationBlock1">
+            <div class="dividerTop1">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    <div id="compareColumn2" class="productCompareColumn2">
+        <div id="columnRemoveButton2" class="productCompareRemoveButton">
+            Remove Product
+        </div>
+        
+        <div id="productName" class="productCompareSpecificationBlock2">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+        </div>
+        
+        <div id="columnImageBlock" class="productCompareImageBlock">
+            <div class="dividerTop1">
+            </div>
+            <img id="productImage" class="productComparePhoto" src="testImage.jpg" alt="test image">
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+        <div id="productSpecification1" class="productCompareSpecificationBlock2">
+            <div class="dividerTop2">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom2">
+            </div>
+        </div>
+        
+        <div id="productSpecification2" class="productCompareSpecificationBlock1">
+            <div class="dividerTop1">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+        <div id="productSpecification3" class="productCompareSpecificationBlock2">
+            <div class="dividerTop2">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom2">
+            </div>
+        </div>
+        
+        <div id="productSpecification4" class="productCompareSpecificationBlock1">
+            <div class="dividerTop1">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom1">
+            </div>
+        </div>
+    </div>
+    
+    <div id="compareColumn3" class="productCompareColumn3">
+        <div id="columnRemoveButton3" class="productCompareRemoveButton">
+            Remove Product
+        </div>
+        
+        <div id="productName" class="productCompareSpecificationBlock2">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+        </div>
+        
+        <div id="columnImageBlock" class="productCompareImageBlock">
+            <div class="dividerTop1">
+            </div>
+            <img id="productImage" class="productComparePhoto" src="testImage.jpg" alt="test image">
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+        
+        <div id="productSpecification1" class="productCompareSpecificationBlock2">
+            <div class="dividerTop2">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom2">
+            </div>
+        </div>
+        
+        <div id="productSpecification2" class="productCompareSpecificationBlock1">
+            <div class="dividerTop1">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+        <div id="productSpecification3" class="productCompareSpecificationBlock2">
+            <div class="dividerTop2">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom2">
+            </div>
+        </div>
+        
+        <div id="productSpecification4" class="productCompareSpecificationBlock1">
+            <div class="dividerTop1">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+    </div>
+     
+    <div id="compareColumn4" class="productCompareColumn4">
+        <div id="columnRemoveButton4" class="productCompareRemoveButton">
+            Remove Product
+        </div>
+        
+        <div id="productName" class="productCompareSpecificationBlock2">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+        </div>
+        
+        <div id="columnImageBlock" class="productCompareImageBlock">
+            <div class="dividerTop1">
+            </div>
+            <img id="productImage" class="productComparePhoto" src="testImage.jpg" alt="test image">
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+        <div id="productSpecification1" class="productCompareSpecificationBlock2">
+            <div class="dividerTop2">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom2">
+            </div>
+        </div>
+        
+        <div id="productSpecification2" class="productCompareSpecificationBlock1">
+            <div class="dividerTop1">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+        <div id="productSpecification3" class="productCompareSpecificationBlock2">
+            <div class="dividerTop2">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom2">
+            </div>
+        </div>
+        
+        <div id="productSpecification4" class="productCompareSpecificationBlock1">
+            <div class="dividerTop1">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+    </div>
+    
+    <div id="compareColumn5" class="productCompareColumn5">
+        <div id="columnRemoveButton5" class="productCompareRemoveButton">
+            Remove Product
+        </div>
+        
+        <div id="productName" class="productCompareSpecificationBlock2">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+        </div>
+        
+        <div id="columnImageBlock" class="productCompareImageBlock">
+            <div class="dividerTop1">
+            </div>
+            <img id="productImage" class="productComparePhoto" src="testImage.jpg" alt="test image">
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+        <div id="productSpecification1" class="productCompareSpecificationBlock2">
+            <div class="dividerTop2">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom2">
+            </div>
+        </div>
+        
+        <div id="productSpecification2" class="productCompareSpecificationBlock1">
+            <div class="dividerTop1">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+        <div id="productSpecification3" class="productCompareSpecificationBlock2">
+            <div class="dividerTop2">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom2">
+            </div>
+        </div>
+        
+        <div id="productSpecification4" class="productCompareSpecificationBlock1">
+            <div class="dividerTop1">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+    </div>
+    
+    <div id="compareColumn6" class="productCompareColumn6">
+        <div id="columnRemoveButton6" class="productCompareRemoveButton">
+            Remove Product
+        </div>
+        
+        <div id="productName" class="productCompareSpecificationBlock2">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+        </div>
+        
+        <div id="columnImageBlock" class="productCompareImageBlock">
+            <div class="dividerTop1">
+            </div>
+            <img id="productImage" class="productComparePhoto" src="testImage.jpg" alt="test image">
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+        <div id="productSpecification1" class="productCompareSpecificationBlock2">
+            <div class="dividerTop2">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom2">
+            </div>
+        </div>
+        
+        <div id="productSpecification2" class="productCompareSpecificationBlock1">
+            <div class="dividerTop1">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+        <div id="productSpecification3" class="productCompareSpecificationBlock2">
+            <div class="dividerTop2">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom2">
+            </div>
+        </div>
+        
+        <div id="productSpecification4" class="productCompareSpecificationBlock1">
+            <div class="dividerTop1">
+            </div>
+            <div id="productSpec" class="productCompareSpecificationText">
+            Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...
+            </div>
+            <div class="dividerBottom1">
+            </div>
+        </div>
+        
+    </div>
+    
 </body>
 </html>

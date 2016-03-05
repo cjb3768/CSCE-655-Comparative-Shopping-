@@ -1,0 +1,273 @@
+/*need to get multiple columns to have the same size rows*/
+
+body{
+    font-family: sans-serif;
+    font-size:16px;
+    background-color:#d7f4e3;
+    display:grid;
+    /*grid-template-columns:logo divider comparison1 comparison2 divider comparison3 divider comparison4 comparison5 divider productListButton;*/
+    /*grid-template-columns:11em 1em auto 2em auto 2em auto 2em auto 2em auto;*/
+    grid-template-columns:11em 1em 11em 2em 11em 2em 11em 2em 11em 2em 11em 2em 11em;
+    /*grid-template-rows:logo searchbutton filters everythingelse; not finished*/
+    grid-template-rows:2.5em 3em auto;
+}
+
+.productCompareColumn1{
+    border:1px solid;
+    border-color:black;
+    grid-column-start:3;
+    grid-column-end:3;
+    grid-row-start:3;
+    grid-row-end:3;
+    /*no internal grid; saves time with expansion*/
+}
+
+.productCompareColumn2{
+    border:1px solid;
+    border-color:black;
+    grid-column-start:5;
+    grid-column-end:5;
+    grid-row-start:3;
+    grid-row-end:3;
+    /*no internal grid; saves time with expansion*/
+}
+
+.productCompareColumn3{
+    border:1px solid;
+    border-color:black;
+    grid-column-start:7;
+    grid-column-end:7;
+    grid-row-start:3;
+    grid-row-end:3;
+    /*no internal grid; saves time with expansion*/
+}
+
+.productCompareColumn4{
+    border:1px solid;
+    border-color:black;
+    grid-column-start:9;
+    grid-column-end:9;
+    grid-row-start:3;
+    grid-row-end:3;
+    /*no internal grid; saves time with expansion*/
+}
+
+.productCompareColumn5{
+    border:1px solid;
+    border-color:black;
+    grid-column-start:11;
+    grid-column-end:11;
+    grid-row-start:3;
+    grid-row-end:3;
+    /*no internal grid; saves time with expansion*/
+}
+
+.productCompareColumn6{
+    border:1px solid;
+    border-color:black;
+    grid-column-start:13;
+    grid-column-end:13;
+    grid-row-start:3;
+    grid-row-end:3;
+    /*no internal grid; saves time with expansion*/
+}
+
+.productCompareRemoveButton{
+    background-color:#5fd38d;
+    text-align: center;
+    height:2em;
+}
+
+.productComparePhotoBlock{
+    width:100%;
+    height:100%;
+    background-color:#5fd38d;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1em auto 1em;
+}
+
+.dividerTop1{
+    background-color:#5fd38d;
+    width:100%;
+    height:1em;
+    grid-row-start:1;
+    grid-row-end:1;
+    grid-column-start:1;
+    grid-column-end:1;
+}
+
+.dividerBottom1{
+    background-color:#5fd38d;
+    width:100%;
+    height:1em;
+    grid-row-start:3;
+    grid-row-end:3;
+    grid-column-start:1;
+    grid-column-end:1;
+}
+
+.dividerTop2{
+    background-color:#217844;
+    width:100%;
+    height:1em;
+    grid-row-start:1;
+    grid-row-end:1;
+    grid-column-start:1;
+    grid-column-end:1;
+}
+
+.dividerBottom2{
+    background-color:#217844;
+    width:100%;
+    height:1em;
+    grid-row-start:3;
+    grid-row-end:3;
+    grid-column-start:1;
+    grid-column-end:1;
+}
+
+.productComparePhoto{
+    width:11em;
+    height:11em;
+    grid-row-start:2;
+    grid-row-end:2;
+    grid-column-start:1;
+    grid-column-end:1;
+}
+
+.productCompareSpecificationBlock2{
+    background-color:#217844;
+    color:#d7f4e3;
+    width:100%;
+    height:15em;
+    display:grid;
+    grid-template-columns: 11em;
+    grid-template-rows: 1em 13em 1em;
+}
+
+.productCompareSpecificationBlock1{
+    background-color:#5fd38d;
+    width:100%;
+    height:15em;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1em 13em 1em;
+}
+
+.productSpecificationText{
+    font-size:1em;
+    background-color:inherit;
+    color:inherit;
+    width:100%;
+    max-width:11em;
+    height:13em;
+    grid-row-start:2;
+    grid-row-end:2;
+    grid-column-start:1;
+    grid-column-end:1;
+}
+
+
+.chartSpecificationList{
+    border:1px solid;
+    border-color:black;
+    grid-column-start:1;
+    grid-column-end:1;
+    grid-row-start:3;
+    grid-row-end:3;
+}
+
+.chartSpecificationHeaderBlock{
+    height:2em;
+    text-align:center;
+    border-color: black;
+    border-bottom: 1px solid;
+}
+
+.chartSpecificationNameBlock{
+    color: #d7f4e3;
+    background-color:#217844;
+    height:15em;
+}
+
+.chartSpecificationImageBlock{
+    background-color:#5fd38d;
+    width:100%;
+    height:13em;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1em 2em 11em 1em;
+}
+
+.chartSpecificationEntryBlock2{
+    background-color:#217844;
+    color:#d7f4e3;
+    width:100%;
+    height:15em;
+    display:grid;
+    grid-template-columns: 11em;
+    grid-template-rows: 1em 2em 11em 1em;
+}
+
+.chartSpecificationEntryBlock1{
+    background-color:#5fd38d;
+    width:100%;
+    height:15em;
+    display:grid;
+    grid-template-columns: 11em;
+    grid-template-rows: 1em 2em 11em 1em;
+}
+
+.chartSpecificationNameText{
+    color:inherit;
+    text-decoration:underline;
+    grid-column-start:1;
+    grid-column-end:1;
+    grid-row-start:2;
+    grid-row-end:2;
+}
+
+.chartSpecificationBodyText{
+    color:inherit;
+    grid-column-start:1;
+    grid-column-end:1;
+    grid-row-start:3;
+    grid-row-end:3;
+}
+
+
+.logoLabel{
+    color: #d7f4e3;
+    font-weight: bold;
+    font-size: 2em;
+    background-color:#217844;
+    width:100%;
+    padding-top:.675em;
+    padding-bottom:.675em;
+    border-color:black;
+    border:1px solid;
+    text-align:center;
+    vertical-align:center;
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:1;
+    grid-column-end:1;
+    
+}
+
+.productListingLabel{
+    color: #d7f4e3;
+    font-weight: bold;
+    font-size: 1.25em;
+    background-color:#217844;
+    border-color:black;
+    border:1px solid;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align:center;
+    grid-row-start:1;
+    grid-row-end:1;
+    grid-column-start:13;
+    grid-column-end:13;
+}
