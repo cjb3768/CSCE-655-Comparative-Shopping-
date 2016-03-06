@@ -31,13 +31,16 @@ function onLoadRendering(){
 					If what you really want is access to that sweet MetadataViewModel, see the "Custom Rendering" demo
 	*/
 	var container = document.getElementById('containerPrime');
-
+    var containerTwo = document.getElementById('containerSecond');
+    
 	var url = $("#containerPrime").attr('url');
+    var urlTwo =  $("#containerSecond").attr('url');
 	var options = {};
 	options.callback = swizzIt;
 
 	RendererBase.addMetadataDisplay(container, url, null, MICE.render, options);
 
+    RendererBase.addMetadataDisplay(containerTwo, urlTwo, null, MICE.render,options);
 
 }
 /*

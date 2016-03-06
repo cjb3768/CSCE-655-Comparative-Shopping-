@@ -30,7 +30,9 @@
     
     <link rel="stylesheet" type="text/css" href="searchpage.css">
 </head>
-<body>
+    
+<body onload="onLoadSemantics()">
+    
     <!--label buttons at top of page -->
     <div id="logo" class="logoLabel">
         GreenPU
@@ -119,6 +121,7 @@
     </div>
     <!--product listings-->
     <div id="productListings" class="productListingBlock">
+        <img class="loadingImage" src="./loading.gif"></img>
         <!--
         <div id="productListing1" class="productListingType1">
           

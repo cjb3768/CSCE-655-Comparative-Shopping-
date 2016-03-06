@@ -231,3 +231,8 @@ body{
     grid-column-start:10;
     grid-column-end:13;
 }
+
+.loadingImage{
+    width:2em;
+    height:2em;
+}
