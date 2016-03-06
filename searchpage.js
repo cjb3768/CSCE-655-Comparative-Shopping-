@@ -19,7 +19,11 @@ function onLoadSemantics(){
 		-options: If you already have meta-metadata, you can pass it in here so prevent double extraction. 
 		-callback: your function that will asynchronously recieve metadata
 	*/
-
+    var jsonReadout = loadJSON(function(response) {
+            var jsonresponse = JSON.parse(response);
+            return jsonresponse;
+    });
+    
 	var options = {};
     var url = productUrls[1];
 	//var url = $("#youtubeOutput").attr('url');
@@ -27,6 +31,28 @@ function onLoadSemantics(){
 	bsService.loadMetadata(url, options, callback);
 }
 
+/*
+    Load in our JSON file
+    Found at http://www.askyb.com/javascript/load-json-file-locally-by-js-without-jquery/
+*/
+function loadJSON(callback){
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'productMetadata.json', true);
+    xobj.onreadystatechange = function () {
+    if (xobj.readyState == 4 && xobj.status == "200") {
+
+        // .open will NOT return a value but simply returns undefined in async mode so use a callback
+        callback(xobj.responseText);
+
+    }
+}
+xobj.send(null);
+
+}
+
+
+         
 function loadListingFromMetaMetadata(err, metadataAndMetametaData){
     var unwrappedMetadata = BSUtils.unwrap(metadataAndMetametaData.metadata);
     //Before using the data, i kill off my loading indicator

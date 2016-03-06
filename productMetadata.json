@@ -1,4 +1,4 @@
-{
+[{
     "amazon_product": {
         "title": "Gigabyte AMD Radeon R7 240 GDDR3-2GB DVI-D/HDMI/D-SUB OC Video Graphics Cards GV-R724OC-2GI REV2.0",
         "description": "Amazon.com: Gigabyte AMD Radeon R7 240 GDDR3-2GB DVI-D/HDMI/D-SUB OC Video Graphics Cards GV-R724OC-2GI REV2.0: Computers & Accessories",
@@ -97,6 +97,7 @@
     }
 }
 
+,
 {
     "amazon_product": {
         "title": "EVGA GeForce GTX 960 2GB SSC GAMING ACX 2.0+, Whisper Silent Cooling Graphics Card 02G-P4-2966-KR",
@@ -171,4 +172,191 @@
     }
 }
 
+,
+{
+    "newegg_product": {
+        "title": "SAPPHIRE NITRO Radeon R9 390 DirectX 12 100382NTOC-2L 8GB 512-Bit GDDR5 PCI Express 3.0 x16 HDCP Ready Tri-X OC Version w/ backplate (UEFI) Video Card",
+        "num_reviews": "99",
+        "description": "Buy SAPPHIRE NITRO Radeon R9 390 DirectX 12 100382NTOC-2L 8GB 512-Bit GDDR5 PCI Express 3.0 x16 HDCP Ready Tri-X OC Version w&#47; backplate &#40;UEFI&#41; Video Card with fast shipping and top-rated customer service. Once you know, you Newegg!",
+        "text_keywords": "Newegg, Newegg.com,SAPPHIRE NITRO Radeon R9 390 DirectX 12 100382NTOC-2L 8GB 512-Bit GDDR5 PCI Express 3.0 x16 HDCP Ready Tri-X OC Version w&#47; backplate &#40;UEFI&#41; Video Card",
+        "location": "http://www.newegg.com/Product/Product.aspx?Item=N82E16814202164",
+        "main_images": [
+            {
+                "location": "http://images17.newegg.com/is/image/newegg/14-202-164-TS?$S640$",
+                "download_status": "UNPROCESSED"
+            }
+        ],
+        "reviews": [
+            {
+                "rating": "5  eggs",
+                "description": "Pros: Not DOAHigher GTA V settings",
+                "title": "Up from a borrowed Sapphire R9 280 3GB Dual-X card"
+            },
+            {
+                "rating": "4  eggs",
+                "description": "Pros: Has some Impressive power. I've had no issues with performance.",
+                "title": "One of my Favs"
+            },
+            {
+                "rating": "5  eggs",
+                "description": "Pros: Looks NiceBackplate8gb VRAM",
+                "title": "Barring the Crimson Drivers, this is a great card"
+            },
+            {
+                "rating": "2  eggs",
+                "description": "Pros: I love this card two be honest for gaming in 1440p, i bought two of them and they could handle any game new or old with out breaking a sweat and stay around 65 degs and synced at 60fps.",
+                "title": "Fried"
+            },
+            {
+                "rating": "5  eggs",
+                "description": "Pros: -This card is sleek, fits well color wise with anything. Backplate is amazing.-Extremely quite, i haven't had the chance to push it hard but running 3dmark benchmarking she never broke 65c and was very quite.-Tri Fan design and next to 0 idle noise(Thanks to Sapphires fan management0-Handles anything i have managed to boot up yet, will update as i get my hands into more games such as MGS5 and Witcher 3-She's big, 308mm big. Be prepared. I set it up in a Fractal R5, removing the middle HDD case since it was a tight fit, has plenty of room.",
+                "title": "She's a beast, through and through."
+            },
+            {
+                "rating": "4  eggs",
+                "description": "Pros: -Could Run All My Steam Library-Runs Most Games About 55+ FPS-Good Cooling Interface",
+                "title": "Good Performance"
+            },
+            {
+                "rating": "4  eggs",
+                "description": "Pros: - 8 GB- Ultra/High quality at 60 Fps at every game I ran through.- The Fans adapting to how much work putting out was nice feature",
+                "title": "It was awesome on all the settings from FPS to Mmorpgs. Warframe was hella pretty, in till the graphics card burnt out on me sparking on the PCI slot ends."
+            },
+            {
+                "rating": "4  eggs",
+                "description": "Pros: Great overclock and doesn't get hot (the three fans work really well).Love the multiple display ports!Looks good.",
+                "title": "If you get a bad one RMA."
+            },
+            {
+                "rating": "5  eggs",
+                "description": "Pros: Runs quiet, Plays.TV (twitch feeds, social media, live stream, recorded posts, etc.), great software.  Just installed today - will update based on 6 month/1year performance",
+                "title": "Great so far"
+            },
+            {
+                "rating": "5  eggs",
+                "description": "Pros: Great graphics, good heat dissipation",
+                "title": "SAPPHIRE NITRO Radeon R9 390 DirectX 12 100382NTOC-2L 8GB 512-Bit GDDR5 PCI Express 3.0 x16 HDCP Ready Tri-X OC Version w/ backplate (UEFI) Video Card - Newegg.com"
+            }
+        ],
+        "specifications_table": [
+            {
+                "specifications": [
+                    {
+                        "name": "Brand",
+                        "value": "SAPPHIRE"
+                    },
+                    {
+                        "name": "Series",
+                        "value": "NITRO"
+                    },
+                    {
+                        "name": "Model",
+                        "value": "100382NTOC-2L"
+                    }
+                ]
+            },
+            {
+                "specifications": [
+                    {
+                        "name": "Interface",
+                        "value": "PCI Express 3.0 x16"
+                    }
+                ]
+            },
+            {
+                "specifications": [
+                    {
+                        "name": "Chipset Manufacturer",
+                        "value": "AMD"
+                    },
+                    {
+                        "name": "GPU Series",
+                        "value": "AMD Radeon R9 300 Series"
+                    },
+                    {
+                        "name": "GPU",
+                        "value": "Radeon R9 390"
+                    },
+                    {
+                        "name": "Core Clock",
+                        "value": "1040 MHz"
+                    },
+                    {
+                        "name": "Stream Processors",
+                        "value": "2560 Stream Processors"
+                    }
+                ]
+            },
+            {
+                "specifications": [
+                    {
+                        "name": "Effective Memory Clock",
+                        "value": "Up to 1500 MHz , Effective 6000Mbps"
+                    },
+                    {
+                        "name": "Memory Size",
+                        "value": "8GB"
+                    },
+                    {
+                        "name": "Memory Interface",
+                        "value": "512-Bit"
+                    },
+                    {
+                        "name": "Memory Type",
+                        "value": "GDDR5"
+                    }
+                ]
+            },
+            {
+                "specifications": [
+                    {
+                        "name": "DirectX",
+                        "value": "DirectX 12"
+                    }
+                ]
+            },
+            {
+                "specifications": [
+                    {
+                        "name": "HDMI",
+                        "value": "1 x HDMI"
+                    },
+                    {
+                        "name": "DisplayPort",
+                        "value": "3 x DisplayPort"
+                    },
+                    {
+                        "name": "DVI",
+                        "value": "1 x DVI-D"
+                    }
+                ]
+            },
+            {
+                "specifications": [
+                    {
+                        "name": "Virtual Reality Ready",
+                        "value": "Yes"
+                    },
+                    {
+                        "name": "Cooler",
+                        "value": "With Fan"
+                    },
+                    {
+                        "name": "HDCP Ready",
+                        "value": "Yes"
+                    }
+                ]
+            }
+        ],
+        "favicon": {
+            "location": "http://images10.newegg.com/WebResource/Themes/2005/Nest/Newegg.ico",
+            "download_status": "UNPROCESSED",
+            "mm_name": "image"
+        },
+        "download_status": "DOWNLOAD_DONE",
+        "mm_name": "newegg_product"
+    }
+}
 
+
+]
