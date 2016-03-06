@@ -10,8 +10,8 @@
 
 var bsService = new BSAutoSwitch(['elkanacmmmdgbnhdjopfdeafchmhecbf', 'gdgmmfgjalcpnakohgcfflgccamjoipd ']);
 
-var productUrls = ["http://www.newegg.com/Product/Product.aspx?Item=N82E16814125516&cm_re=Gigabyte_AMD_Radeon_R7_240-_-14-125-516-_-Product", "http://www.amazon.com/Gigabyte-GDDR3-2GB-Graphics-GV-R724OC-2GI-REV2-0/dp/B00JRSPXMQ/ref=sr_1_1?ie=UTF8&qid=1457280904&sr=8-1&keywords=gpu"]
-
+var productData = new Firebase("https://greenpu.firebaseio.com/ProductMetadata");
+                               
 function onLoadSemantics(){
     /*
 	Let's break down the arguments.
@@ -19,38 +19,13 @@ function onLoadSemantics(){
 		-options: If you already have meta-metadata, you can pass it in here so prevent double extraction. 
 		-callback: your function that will asynchronously recieve metadata
 	*/
-    var jsonReadout = loadJSON(function(response) {
-            var jsonresponse = JSON.parse(response);
-            return jsonresponse;
-    });
     
 	var options = {};
-    var url = productUrls[1];
+    var url = "http://www.newegg.com/Product/Product.aspx?Item=N82E16814202185";
 	//var url = $("#youtubeOutput").attr('url');
 	var callback = loadListingFromMetaMetadata;
 	bsService.loadMetadata(url, options, callback);
 }
-
-/*
-    Load in our JSON file
-    Found at http://www.askyb.com/javascript/load-json-file-locally-by-js-without-jquery/
-*/
-function loadJSON(callback){
-    var xobj = new XMLHttpRequest();
-    xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'productMetadata.json', true);
-    xobj.onreadystatechange = function () {
-    if (xobj.readyState == 4 && xobj.status == "200") {
-
-        // .open will NOT return a value but simply returns undefined in async mode so use a callback
-        callback(xobj.responseText);
-
-    }
-}
-xobj.send(null);
-
-}
-
 
          
 function loadListingFromMetaMetadata(err, metadataAndMetametaData){

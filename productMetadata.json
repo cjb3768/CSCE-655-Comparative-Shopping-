@@ -96,7 +96,6 @@
         "mm_name": "amazon_product"
     }
 }
-
 ,
 {
     "amazon_product": {
@@ -171,7 +170,6 @@
         "mm_name": "amazon_product"
     }
 }
-
 ,
 {
     "newegg_product": {
@@ -357,6 +355,348 @@
         "mm_name": "newegg_product"
     }
 }
-
+,
+{
+    "newegg_product": {
+        "title": "SAPPHIRE NITRO Radeon R9 390X 100381NTOCL 8GB GDDR5 PCI Express 3.0 OC Version w/ backplate (UEFI) Video Card",
+        "main_images": [
+            {
+                "location": "http://images17.newegg.com/is/image/newegg/14-202-185-TS?$S640$",
+                "download_status": "UNPROCESSED"
+            }
+        ],
+        "overall_rating": {
+            "type": "http://schema.org/AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "7"
+        },
+        "num_reviews": "7",
+        "reviews": [
+            {
+                "rating": "5  eggs",
+                "description": "Pros: I like it, click in, easy hook up.  I don't notice the fans, and keeps cool even when on for a day or 2. So far so good.",
+                "title": "Works as it should."
+            },
+            {
+                "rating": "5  eggs",
+                "description": "Pros: Quit, fans are at idle most of the time",
+                "title": "Wicket card"
+            },
+            {
+                "rating": "5  eggs",
+                "description": "Pros: PerformanceTemperature tres basseExtremement silencieuseLe look est fantastique",
+                "title": "Excellente carte graphique!"
+            },
+            {
+                "rating": "4  eggs",
+                "description": "Pros: Run brilliantly, very fast. I get 100 fps on Rust on full settings. Using MSI Z97 MSI gaming 5 with Intel i7 4770K 4.0Ghz and 16gb RAM.Fans are only activated when needed. When they are running it generates a bit of noise but nothing too major.",
+                "title": "Great product but caused a lot of headaches to get it working."
+            },
+            {
+                "rating": "5  eggs",
+                "description": "Pros: -Easy setup-Cool temperatures-Plays all games 1080p Maxed out 60+ fps-Backplate",
+                "title": "Amazing, low temps"
+            },
+            {
+                "rating": "5  eggs",
+                "description": "Pros: Good Performance                                                                           Low temperatures, highest I have seen is 68C while overclocked.Beats many of competing cards like the 970, 780 Ti, and close to the 980 for $100 less.Very quiet it's almost not noticeable 56% fan speed.Drivers have been getting much better from AMD, I have never had a problem unlike some people say.It's a Nice black color scheme with gun metal grey accentsMy overclocking ASIC Quality was 71.4%, it overclocked very nicely I have to say.",
+                "title": "Very good Product, Sapphire beats expectations!"
+            },
+            {
+                "rating": "5  eggs",
+                "description": "Pros: -Replaced my Sapphire 7970 vapor X-Runs quiet and fast-Installed on Windows 10 no problem",
+                "title": "No problems, runs great!"
+            }
+        ],
+        "product_details": [
+            "8GB GDDR5",
+            "Core Clock 1080 MHz",
+            "1 x DVI-D 1 x HDMI 3 x DisplayPort",
+            "PCI Express 3.0"
+        ],
+        "specifications_table": [
+            {
+                "specifications": [
+                    {
+                        "name": "Brand",
+                        "value": "SAPPHIRE"
+                    },
+                    {
+                        "name": "Series",
+                        "value": "NITRO"
+                    },
+                    {
+                        "name": "Model",
+                        "value": "100381NTOCL"
+                    }
+                ]
+            },
+            {
+                "specifications": [
+                    {
+                        "name": "Interface",
+                        "value": "PCI Express 3.0"
+                    }
+                ]
+            },
+            {
+                "specifications": [
+                    {
+                        "name": "Chipset Manufacturer",
+                        "value": "AMD"
+                    },
+                    {
+                        "name": "GPU Series",
+                        "value": "AMD Radeon R9 300 Series"
+                    },
+                    {
+                        "name": "GPU",
+                        "value": "Radeon R9 390X"
+                    },
+                    {
+                        "name": "Core Clock",
+                        "value": "1080 MHz"
+                    }
+                ]
+            },
+            {
+                "specifications": [
+                    {
+                        "name": "Memory Size",
+                        "value": "8GB"
+                    },
+                    {
+                        "name": "Memory Type",
+                        "value": "GDDR5"
+                    }
+                ]
+            },
+            {
+                "specifications": [
+                    {
+                        "name": "HDMI",
+                        "value": "1 x HDMI"
+                    },
+                    {
+                        "name": "DisplayPort",
+                        "value": "3 x DisplayPort"
+                    },
+                    {
+                        "name": "DVI",
+                        "value": "1 x DVI-D"
+                    }
+                ]
+            },
+            {
+                "specifications": [
+                    {
+                        "name": "Virtual Reality Ready",
+                        "value": "Yes"
+                    },
+                    {
+                        "name": "Cooler",
+                        "value": "With Fan"
+                    }
+                ]
+            },
+            {
+                "specifications": [
+                    {
+                        "name": "Slot Width",
+                        "value": "Dual Slot"
+                    }
+                ]
+            }
+        ],
+        "description": "Buy SAPPHIRE NITRO Radeon R9 390X 100381NTOCL 8GB GDDR5 PCI Express 3.0 OC Version w&#47; backplate &#40;UEFI&#41; Video Card with fast shipping and top-rated customer service. Once you know, you Newegg!",
+        "price": "",
+        "favicon": {
+            "location": "http://images10.newegg.com/WebResource/Themes/2005/Nest/Newegg.ico",
+            "download_status": "UNPROCESSED",
+            "mm_name": "image"
+        },
+        "text_keywords": "Newegg, Newegg.com,SAPPHIRE NITRO Radeon R9 390X 100381NTOCL 8GB GDDR5 PCI Express 3.0 OC Version w&#47; backplate &#40;UEFI&#41; Video Card",
+        "location": "http://www.newegg.com/Product/Product.aspx?Item=N82E16814202185",
+        "mm_name": "newegg_product"
+    }
+}
+,
+{
+    "amazon_product": {
+        "title": "MSI R7 370 GAMING 4G Graphics Card",
+        "description": "Amazon.com: MSI R7 370 GAMING 4G Graphics Card: Computers & Accessories",
+        "price": "$187.56",
+        "overall_rating": "4.5 out of 5 stars",
+        "text_keywords": "gpu",
+        "location": "http://www.amazon.com/MSI-R7-370-GAMING-4G/dp/B00ZGF11YS",
+        "main_images": [
+            {
+                "location": "http://ecx.images-amazon.com/images/I/814DeoTW5lL._SL1500_.jpg",
+                "download_status": "UNPROCESSED"
+            }
+        ],
+        "reviews": [
+            {
+                "rating": "5 stars",
+                "description": "So far so good.  I upgraded to this R7 370 4g card to replace an aging Radeon 3870 HD in my Dell XPS 420.  It is a pretty significant upgrade from what I had before.  I did not really need to replace my 435w power supply with this card since the power draw was within 5w of my old card, but I went ahead and swapped out the old Dell 435w psu to a new Sentey 750w psu just to be safe.  This card is extremely quiet and runs cool.  Benchmarks are right where they should be based on what I've seen in online reviews.  Mine is actually fast even though my motherboard only supports PCIe 2.0.  So far my only gripe is that I can't watch any videos above 1080p without slow down and skipped frame rates in YouTube.  I don't believe this is the fault of the card though so much as it is my aging motherboard that can't keep up.  1080p plays fine for both games and videos so I think it's just my old computer.  If you have a faster newer computer, you results will no doubt be better than mine.  My processor is a Core 2 quad 6700 with 8gig DDR2 800mhz ram.  I bought this card mostly to beef up my old computer to get it ready for Windows 10 which I installed already.  This card uses the AMD catalyst software so you can go directly to AMD's site and get the latest and greatest drivers.  Windows 10 reached out and did the upgrade to the Windows 10 version of Catalyst automatically during the upgrade process so I didn't have to mess with it.  So far the card works perfectly with no noted issues in Windows 10 so for those of you wondering if this card will work correctly out of the box in Windows 10, I can say YES you will have no worries.",
+                "title": "So far so good. I upgraded to this R7 370 4g card ..."
+            },
+            {
+                "rating": "5 stars",
+                "description": "Went into this not expecting much more than an average card. Was more than impressed by the performance. The card itself sits well and is not overly big by all means. It can easily max out most modern titles at 60fps without breaking a sweat but will have to be toned down just a bit for more graphically intensive games. One of the better mid-range cards i've used and was actually my first venture into an AMD card. After noticing the strengths I went ahead and purchased another one for  another build I was working on. One negative side note would be the RAPTR game recording software it comes with. It is horrible and caused many unknown crashes on many of my games. Once I turned off the overlay and capture feature everything ran smoothly.",
+                "title": "It can easily max out most modern titles at 60fps without breaking ..."
+            },
+            {
+                "rating": "5 stars",
+                "description": "This graphics ard has performed way above than what i expected. After being a GeForce fan for many years and my last card was an Asus GeForce 550ti 1gb. After buying the new R7 370, i am way impressed. I recommended the same card to a friend of mine and he bought it and loves it!!! I recommend this card to anybody looking for a 4GB card and is on a budget. MSI did really good with this :)",
+                "title": "Definately way more bang for your buck!!!"
+            },
+            {
+                "rating": "5 stars",
+                "description": "Playing World OF Tanks like a boss in HD and almost maxed out. The performance is great, especially for the price, and it lights up nicely in my setup. I think the 4 gb of ddr5 make a huge difference.",
+                "title": "World of Tanks like I have never seen it."
+            },
+            {
+                "rating": "5 stars",
+                "description": "GTA V @ 40 fps with everything set to \"high\" and MSAA turned to x4... can't complain! The 4GB VRAM version is worth the extra bucks. Don't settle for the 2GB version. Won't be able to max out intensive games, unless you're a fan of constant stuttering. I should know. My previous card was an XFX R9 380 2GB.",
+                "title": "The 4GB Version Is Worth It. Don't Settle For The 2GB Version."
+            },
+            {
+                "rating": "4 stars",
+                "description": "I bought this primarily for Fallout 4 as my old 650ti was having a hard time. It runs the game fine. It's not as slick as some of the higher priced models, but you get what you pay for. 60 fps on Fallout 4 at 900p (Old monitor maxes out at 1440x900 ) - Medium Detail. Minecraft also runs fine on this, 60fps + solid on vanilla Minecraft (Vsync off) and about 45-50 on modded Minecraft (FTB Packs. Vsync off). If you can afford better, both the R9 380 and the Geforce 960 are stronger cards, but if your budget focused like I am, you can accept some compromises, which is exactly what this card is. (My rig is an FX 6300, 8GB , R7 370)",
+                "title": "Compromise Card"
+            },
+            {
+                "rating": "5 stars",
+                "description": "Great card the only problem is it would not fit my apevia xq pack 2 case because of the copper heat pipe. Not a problem for me though I put it in my other computer because it seemed like the older sapphire card I had was not fully compatible with the motherboard and would blue screen often my initial thoughts was that it was the memory sticks but I was wrong.. Mid level gaming on 1920x1080 is the sweet spot for most newer games and I have a  22 inch monitor which is the optimal resolution for that monitor.One of the many reasons I go time and time again to MSI is quality. They cover up all the connections with covers so they do not get damaged. The box itself was packaged well. The only downside I can think of is bundling of free games but that is a gimmick and I'm glad they didn't do that but it would of been  a nice bonus.I would recommend turning down the resolution to 1680x1050 on newer games though. The only regret I have is I didn't spend a little more and got the 4gb one, but then I realize a couple of things.One, that I don't do a whole lot of gaming plus another is  when I do I want it to have optimal performance for the type of monitor I have and this provides that, so in retrospect I'm happy overall. I don't play a lot of games that utilizes textures anyways and that is where the extra 2 gb would of been nice.This has some additional eyecandy in that it has color leds. If you have a see-through gaming case this would be relevant for that but I have no plans to upgrade my case. I might in a year or so because I prefer a better case that is see-through and I dented my existing  black non- see through case but that is further down the road and I'm not sure if I might.Read more ›",
+                "title": "MSI quality impresses again"
+            }
+        ],
+        "companion_products": [
+            {
+                "price": "$187.56",
+                "location": "http://www.amazon.com/MSI-970-GAMING-DDR3-Motherboard/dp/B00LUY72F6/ref=pd_sim_147_1?ie=UTF8&dpID=51XiDG5rPyL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=0S1NXA0EY36D26KKQGTB",
+                "title": "MSI 970 GAMING DDR3 2133 ATX AMD Motherboard",
+                "download_status": "UNPROCESSED"
+            },
+            {
+                "price": "$187.56",
+                "location": "http://www.amazon.com/AMD-FD6300WMHKBOX-FX-6300-Processor-Edition/dp/B009O7YORK/ref=pd_sim_147_2?ie=UTF8&dpID=41xjeiOr-SL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=0S1NXA0EY36D26KKQGTB",
+                "title": "AMD FD6300WMHKBOX FX-6300 6-Core Processor Black Edition",
+                "download_status": "UNPROCESSED"
+            },
+            {
+                "price": "$187.56",
+                "location": "http://www.amazon.com/AMD-FD8350FRHKBOX-FX-8350-FX-Series-Processor/dp/B009O7YUF6/ref=pd_sim_147_3?ie=UTF8&dpID=518qJja1rsL&dpSrc=sims&preST=_AC_UL160_SR135%2C160_&refRID=0S1NXA0EY36D26KKQGTB",
+                "title": "AMD FD8350FRHKBOX FX-8350  FX-Series 8-Core Black Edition Processor",
+                "download_status": "UNPROCESSED"
+            },
+            {
+                "price": "$187.56",
+                "location": "http://www.amazon.com/EVGA-Continuous-Warranty-Supply-100-W1-0500-KR/dp/B00H33SFJU/ref=pd_sim_147_4?ie=UTF8&dpID=51PiQrWaNjL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=0S1NXA0EY36D26KKQGTB",
+                "title": "EVGA 500 W1 80+, 500W Continuous Power, 3 Year Warranty Power Supply 100-W1-0500-KR",
+                "download_status": "UNPROCESSED"
+            },
+            {
+                "price": "$187.56",
+                "location": "http://www.amazon.com/Blue-Desktop-Hard-Disk-Drive/dp/B0088PUEPK/ref=pd_sim_147_5?ie=UTF8&dpID=51fbLQLVJFL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=0S1NXA0EY36D26KKQGTB",
+                "title": "WD Blue 1TB  Desktop  Hard Disk Drive - 7200 RPM SATA 6 Gb/s 64MB Cache 3.5 Inch  - WD10EZEX",
+                "download_status": "UNPROCESSED"
+            },
+            {
+                "price": "$187.56",
+                "location": "http://www.amazon.com/Sentey-Xplus-Power-Supply-XPP725-HS/dp/B00SN6VN7W/ref=pd_sim_147_6?ie=UTF8&dpID=51im3ZW7R4L&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=0S1NXA0EY36D26KKQGTB",
+                "title": "Sentey Xplus Power Supply 725 Watt (XPP725-HS)",
+                "download_status": "UNPROCESSED"
+            }
+        ],
+        "download_status": "DOWNLOAD_DONE",
+        "mm_name": "amazon_product"
+    }
+}
+,
+{
+    "amazon_product": {
+        "title": "EVGA GeForce GTX 750Ti SC 2GB GDDR5 Graphics Card 02G-P4-3753-KR",
+        "description": "Amazon.com: EVGA GeForce GTX 750Ti SC 2GB GDDR5 Graphics Card 02G-P4-3753-KR: Computers & Accessories",
+        "price": "$137.29",
+        "overall_rating": "4.7 out of 5 stars",
+        "text_keywords": "gpu",
+        "location": "http://www.amazon.com/EVGA-GeForce-750Ti-Graphics-02G-P4-3753-KR/dp/B00IDG3IDO",
+        "main_images": [
+            {
+                "location": "http://www.amazon.com/data:image/webp;base64,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",
+                "download_status": "UNPROCESSED"
+            }
+        ],
+        "reviews": [
+            {
+                "rating": "5 stars",
+                "description": "After many years of being a console gamer, I purchased a pre-built gaming PC a few years back for my 18th birthday. The only bottleneck in its performance was the GPU, an Nvidia GT610. While the PC was a huge step up from my last computer in terms of performance, it just wasn't cutting it. It was frustrating being unable to play newer games at higher resolutions. As an essentially broke college student (at the time) I grew upset and backed away from PC gaming for a while.Flash forward to early 2014. The media was abuzz with article after article boasting the performance of Nvidia's new card, the GTX 750ti, calling it an Xbox killer, PS4 slasher, all of that. \"Plays Titanfall better than Xbox One at 1080p\" was a frequent comment made by journalists referring to this card. I let the hype build in me until I finally decided to put my tax return towards this card. Is it as good as you'd think?  I've owned this card for about 6 months now.PROS:-Price point. $150 is super cheap for this level performance, though I imagine with more people finding out about this card, the price will rise. (I paid around $140 for mine after rebate.) I was beyond excited when I finally got it, and could see what it could do. For somebody who's just getting into building a PC, or upgrading their current desktop tower, I can definitely recommend this card as a great starting point!-Graphics capabilities. This card plays just about anything with ease. I enjoy playing games at 1080p and this allows me to do that for most games on high settings with minimal optimization. Straight out of a fresh game installation, you can expect to play most newer games at 35-60 FPS.Read more ›",
+                "title": "Simply the best (For the money)"
+            },
+            {
+                "rating": "5 stars",
+                "description": "Gpu quick, easy installation, etc .. installed i3 4150, 8GB RAM ddr3 1600, GA B85M-DS3Hevaluation windows (7.7 and 7.7)",
+                "title": "Fast !"
+            },
+            {
+                "rating": "5 stars",
+                "description": "If you're one of those folks who needs the biggest, baddest, etc, go buy yourself a Titan or a 780, or better yet, save yourself a few hundred and buy a 760.For many though, a video card is the make or break component that defines whether you'll be watching each frame as it pops on your screen or actually enjoying playing on your gaming PC.  For many that have an older system, or one that has an underpowered PSU, this is the best card you can get.  It's fully bus powered, and will let you run games like WoW on Ultra at 100fps.  More taxing games like Crysis will run at medium-high at 60fps.  Mind you this is all at 1080p.I built a DIY steam box, and was waiting for this card to come out.  It's quiet, doesn't get hot at all, and again, is bus powered.  So you can easily pop in this along with a decent core i5 and have yourself a great steam machine in a compact SFF case.This is a great card, bar none one of the best bang for the bucks out there.",
+                "title": "Nvidia does it again"
+            },
+            {
+                "rating": "5 stars",
+                "description": "I had bought an IBUYPOWER PC on best buy with windows 8 but with a decent graphics card( i forgot the model) but i would have to lower the settings to medium to be able to play Left 4 Dead 2 so i found a video on the Gamespot website where they showed what this Card could do and run. it turned out to be a great deal, its decent in price and in performance it runs skyrim on high settings because when i put it on ultra it would kind of lag but i optimized and it gave me high settings, switching from PS3 skyrim to PC wow you can really tell the difference, i gave it 5 stars and I love it.The games i play on my PC with this card are-Batman Arkham City (high settings optimized)-Red Orchestra 2 Heroes of stalingrad(high settings optimized)-Left 4 Dead 2(very high settings)-Hawken(high settings)-Deadspace(very high settings)-Titanfall(very high settings)-Mech warrior online(high settings)-goat simulator(my old game card could play this game)-Tom Clancy's Ghost Recon Phantoms Free-To-Play(very high settings)- Team Fortress 2 (very high settings)",
+                "title": "It has helped me join the PC race"
+            },
+            {
+                "rating": "5 stars",
+                "description": "This is the first card in Nvidia's new \"Maxwell\" architecture that would be the Geforce 8-series.  I think this is their first spin with the current process, and performance-wise fits into the 7-series right at the number the card has.  I think with the shrink we will see a similar (and probably a little faster) version of this card as the 850.  The level of performance is good, but in terms of the power and heat...it's among the best out there.It is very low power, but the performance is good enough for 1080p at a good frame rate with today's games.  I got this card for my Linux box, and with the 331.49 Linux 64-bit driver the card is detected correctly, and works just great, even in demanding games like Metro Last Light; at 1920*1200 the frame rate was smooth with nearly maximum settings (for Linux at least).  Driver support is of course very new (it wasn't correctly detected in the 331.20 set) so performance could very well improve even more.  So, basically even though you need Windows according to the box, the card works just fine in 64-bit Linux (both Ubuntu 12.04 and 13.10).The card itself is very small and light.  It's not really very loud either.  There is no 6-pin connector; it draws all power through the slot.  Some cards are sold with that connector, but I think even with a high overclock, you may not even need it.  As to overclocking, I use it in Linux so I can't tell you that...but this is the superclocked version so it will run at over 1200Mhz boosted easily, as indicated in the specifications.",
+                "title": "Very happy with it so far.  Runs cool, low power, with good performance, works in Linux"
+            }
+        ],
+        "companion_products": [
+            {
+                "price": "$137.29",
+                "location": "http://www.amazon.com/EVGA-Continuous-Warranty-Supply-100-W1-0500-KR/dp/B00H33SFJU/ref=pd_sim_147_1?ie=UTF8&dpID=51PiQrWaNjL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=09ESHGCTFGBTXFKPEPYN",
+                "title": "EVGA 500 W1 80+, 500W Continuous Power, 3 Year Warranty Power Supply 100-W1-0500-KR",
+                "download_status": "UNPROCESSED"
+            },
+            {
+                "price": "$137.29",
+                "location": "http://www.amazon.com/AMD-FD6300WMHKBOX-FX-6300-Processor-Edition/dp/B009O7YORK/ref=pd_sim_147_2?ie=UTF8&dpID=41xjeiOr-SL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=09ESHGCTFGBTXFKPEPYN",
+                "title": "AMD FD6300WMHKBOX FX-6300 6-Core Processor Black Edition",
+                "download_status": "UNPROCESSED"
+            },
+            {
+                "price": "$137.29",
+                "location": "http://www.amazon.com/Gigabyte-DDR3-Micro-Motherboard-GA-78LMT-USB3/dp/B009FC3YJ8/ref=pd_sim_147_3?ie=UTF8&dpID=51WPgjfTaOL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=09ESHGCTFGBTXFKPEPYN",
+                "title": "Gigabyte AM3+ AMD DDR3 1333 760G HDMI USB 3.0 Micro ATX Motherboard GA-78LMT-USB3",
+                "download_status": "UNPROCESSED"
+            },
+            {
+                "price": "$137.29",
+                "location": "http://www.amazon.com/Blue-Desktop-Hard-Disk-Drive/dp/B0088PUEPK/ref=pd_sim_147_4?ie=UTF8&dpID=51fbLQLVJFL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=09ESHGCTFGBTXFKPEPYN",
+                "title": "WD Blue 1TB  Desktop  Hard Disk Drive - 7200 RPM SATA 6 Gb/s 64MB Cache 3.5 Inch  - WD10EZEX",
+                "download_status": "UNPROCESSED"
+            },
+            {
+                "price": "$137.29",
+                "location": "http://www.amazon.com/Crucial-Ballistix-PC3-12800-BLS2KIT4G3D1609DS1S00-BLS2CP4G3D1609DS1S00/dp/B006WAGGUK/ref=pd_sim_147_5?ie=UTF8&dpID=410h5n2tSyL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=09ESHGCTFGBTXFKPEPYN",
+                "title": "Crucial Ballistix Sport 8GB Kit (4GBx2) DDR3 1600 (PC3-12800) 240-Pin UDIMM Memory BLS2KIT4G3D1609DS1S00/BLS2CP4G3D1609DS1S00",
+                "download_status": "UNPROCESSED"
+            },
+            {
+                "price": "$137.29",
+                "location": "http://www.amazon.com/AMD-Athlon-Edition-3700Mhz-AD860KXBJABOX/dp/B00MU00IOQ/ref=pd_sim_147_6?ie=UTF8&dpID=41S993K53EL&dpSrc=sims&preST=_AC_UL160_SR154%2C160_&refRID=09ESHGCTFGBTXFKPEPYN",
+                "title": "AMD Athlon X4 860K Black Edition CPU Quad Core FM2+ 3700Mhz 95W 4MB AD860KXBJABOX",
+                "download_status": "UNPROCESSED"
+            }
+        ],
+        "download_status": "DOWNLOAD_DONE",
+        "mm_name": "amazon_product"
+    }
+}
 
 ]
