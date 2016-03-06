@@ -25,6 +25,8 @@
 		RepoMan loads a Meta-metadata repository. Avoid doing anything with it directly; it's messy-->
 	<script type="text/javascript" src="./BigSemanticsJavaScript/bsjsCore/RepoMan.js"></script>
 
+    <!--search page javascript page-->
+    <script type="text/javascript" src="./searchpage.js"></script>
     
     <link rel="stylesheet" type="text/css" href="searchpage.css">
 </head>
@@ -33,19 +35,19 @@
     <div id="logo" class="logoLabel">
         GreenPU
     </div>
-    <div id="compareLabel" class="compareLabel">
+    <button id="compareLabel" class="compareLabel" onclick="openCompare()">
         Compare Items
-    </div>
-    <div id="searchButton" class="searchButton">
+    </button>
+    <button id="searchButton" class="searchButton" onclick="runSearch()">
         Search
-    </div>
+    </button>
     <!--search form-->
     <form id="searchForm" class="searchForm">
         <input type="text" name="productSearch"  class="searchBar">
     </form>
     
     <!--current search terms-->
-    <span id="currentFiltersHeader" class="currentFiltersHeader">
+    <span class="currentFiltersHeader">
         Current Filters: 
     </span>
     <span id="currentFiltersList" class="currentFiltersTerms">
@@ -53,22 +55,22 @@
     </span>
     
     <!--search facet list-->
-    <div id="searchFacetHeading" class="searchFacetHeader">
+    <div class="searchFacetHeader">
         Search Filters
     </div>
     
     
     <div id="searchFacetBlock" class="searchFacetBlock">
         
-        <span id="facet01" class="searchFacet">
+        <span class="searchFacet">
             Filter 01
         </span>
         <br>
-        <span id="subfacet01a" class="searchSubFacet">
+        <span class="searchSubFacet">
             Filter 01a
         </span>
         <br>
-        <span id="subfacet01b" class="searchSubFacet">
+        <span class="searchSubFacet">
             Filter 01b
         </span>
         <br>
@@ -77,36 +79,36 @@
         </span>
         <br>
         <br>
-        <span id="facet02" class="searchFacet">
+        <span class="searchFacet">
             Filter 02
         </span>
         <br>
-        <span id="subfacet02a" class="searchSubFacet">
+        <span class="searchSubFacet">
             Filter 02a
         </span>
         <br>
-        <span id="subfacet02b" class="searchSubFacet">
+        <span class="searchSubFacet">
             Filter 02b
         </span>
         <br>
-        <span id="subfacet02c" class="searchSubFacet">
+        <span class="searchSubFacet">
             Filter 02c
         </span>
         <br>
         <br>
-        <span id="facet03" class="searchFacet">
+        <span class="searchFacet">
             Filter 03
         </span>
         <br>
-        <span id="subfacet03a" class="searchSubFacet">
+        <span class="searchSubFacet">
             Filter 03a
         </span>
         <br>
-        <span id="subfacet03b" class="searchSubFacet">
+        <span class="searchSubFacet">
             Filter 03b
         </span>
         <br>
-        <span id="subfacet03c" class="searchSubFacet">
+        <span class="searchSubFacet">
             Filter 03c
         </span>
         <br>
@@ -119,11 +121,11 @@
     <div id="productListings" class="productListingBlock">
         <div id="productListing1" class="productListingType1">
           
-            <img id="productImage" class="productListingImage" src="testImage.jpg" alt="test image">
-            <span id="productName" class="productListingName">
+            <img class="productListingImage" src="testImage.jpg" alt="test image">
+            <span class="productListingName">
             GPU 1 Name
             </span>
-             <span id="productDescription" class="productListingBodyText">
+             <span class="productListingBodyText">
                 Detail 1 - Lorum ipsum...<br>
                 Detail 2 - Lorum ipsum...<br>
                 Detail 1 - Lorum ipsum...<br>
@@ -131,24 +133,26 @@
                 Detail 1 - Lorum ipsum...<br>
                 Detail 2 - Lorum ipsum...<br>
             </span>
-            <span id="productPrice" class="productListingPrice">
+            <span class="productListingPrice">
                 $ 12345.00
             </span>
-             <div id="product1PurchaseButton" class="productListingPurchaseButton">
-            Buy Product
-            </div>
-            <div id="product1CompareButton" class="productListingCompareButton">
-            Add To Compare
+            <div class="productListingButtonBlock">
+                <div class="productListingPurchaseButton">
+                    Buy Product
+                </div>
+                <div class="productListingCompareButton">
+                    Add To Compare
+                </div>
             </div>
         </div>
         
         <div id="productListing2" class="productListingType2">
           
-            <img id="productImage" class="productListingImage" src="testImage.jpg" alt="test image">
-            <span id="productName" class="productListingName">
+            <img class="productListingImage" src="testImage.jpg" alt="test image">
+            <span class="productListingName">
             GPU 2 Name
             </span>
-            <span id="productDescription" class="productListingBodyText">
+            <span class="productListingBodyText">
                 Detail 1 - Lorum ipsum...<br>
                 Detail 2 - Lorum ipsum...<br>
                 Detail 1 - Lorum ipsum...<br>
@@ -156,24 +160,26 @@
                 Detail 1 - Lorum ipsum...<br>
                 Detail 2 - Lorum ipsum...<br>
             </span>
-            <span id="productPrice" class="productListingPrice">
+            <span  class="productListingPrice">
                 $ 12345.00
             </span>
-            <div id="product2PurchaseButton" class="productListingPurchaseButton">
-            Buy Product
-            </div>
-            <div id="product2CompareButton" class="productListingCompareButton">
-            Add To Compare
+            <div class="productListingButtonBlock">
+                <div class="productListingPurchaseButton">
+                    Buy Product
+                </div>
+                <div class="productListingCompareButton">
+                    Add To Compare
+                </div>
             </div>
         </div>
         
          <div id="productListing3" class="productListingType1">
           
-            <img id="productImage" class="productListingImage" src="testImage.jpg" alt="test image">
-            <span id="productName" class="productListingName">
+            <img class="productListingImage" src="testImage.jpg" alt="test image">
+            <span class="productListingName">
             GPU 1 Name
             </span>
-             <span id="productDescription" class="productListingBodyText">
+             <span class="productListingBodyText">
                 Detail 1 - Lorum ipsum...<br>
                 Detail 2 - Lorum ipsum...<br>
                 Detail 1 - Lorum ipsum...<br>
@@ -181,14 +187,16 @@
                 Detail 1 - Lorum ipsum...<br>
                 Detail 2 - Lorum ipsum...<br>
             </span>
-            <span id="productPrice" class="productListingPrice">
+            <span class="productListingPrice">
                 $ 12345.00
             </span>
-             <div id="product1PurchaseButton" class="productListingPurchaseButton">
-            Buy Product
-            </div>
-            <div id="product3CompareButton" class="productListingCompareButton">
-            Add To Compare
+             <div class="productListingButtonBlock">
+                <div class="productListingPurchaseButton">
+                    Buy Product
+                </div>
+                <div class="productListingCompareButton">
+                    Add To Compare
+                </div>
             </div>
         </div>
     </div>
