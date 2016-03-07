@@ -11,6 +11,15 @@
 var bsService = new BSAutoSwitch(['elkanacmmmdgbnhdjopfdeafchmhecbf', 'gdgmmfgjalcpnakohgcfflgccamjoipd ']);
 
 var productData = new Firebase("https://greenpu.firebaseio.com/ProductMetadata");
+
+var compareList = new Firebase("https://greenpu.firebaseio.com/ComparisonList");
+
+// Attach an asynchronous callback to read the data at our posts reference
+productData.on("value", function(snapshot) {
+  console.log(snapshot.val());
+}, function (errorObject) {
+  console.log("The read failed: " + errorObject.code);
+});
                                
 function onLoadSemantics(){
     /*
@@ -19,12 +28,16 @@ function onLoadSemantics(){
 		-options: If you already have meta-metadata, you can pass it in here so prevent double extraction. 
 		-callback: your function that will asynchronously recieve metadata
 	*/
-    
+    /*
 	var options = {};
     var url = "http://www.newegg.com/Product/Product.aspx?Item=N82E16814202185";
 	//var url = $("#youtubeOutput").attr('url');
 	var callback = loadListingFromMetaMetadata;
 	bsService.loadMetadata(url, options, callback);
+    */
+    //access json file
+    //attempt to create a file from each child in productData
+    
 }
 
          
@@ -88,6 +101,7 @@ function goToShopPage(shopPageUrl){
 */
 function addItemToCompare(){
     console.log("add to compare button pressed!")
+    //compareList
 }
 
 function addTextBlock(textClass, textBody){

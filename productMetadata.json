@@ -1,4 +1,5 @@
-[{
+[
+    {"product01":{
     "amazon_product": {
         "title": "Gigabyte AMD Radeon R7 240 GDDR3-2GB DVI-D/HDMI/D-SUB OC Video Graphics Cards GV-R724OC-2GI REV2.0",
         "description": "Amazon.com: Gigabyte AMD Radeon R7 240 GDDR3-2GB DVI-D/HDMI/D-SUB OC Video Graphics Cards GV-R724OC-2GI REV2.0: Computers & Accessories",
@@ -94,8 +95,8 @@
         ],
         "download_status": "DOWNLOAD_DONE",
         "mm_name": "amazon_product"
+    }}
     }
-}
 ,
 {
     "amazon_product": {
