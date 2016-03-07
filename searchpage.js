@@ -146,27 +146,14 @@ function createNewListing(productName, productUrl, productDescription, productPr
 }
 
 function viewComparison(){
-    /*var imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/2000px-Smiley.svg.png";
-    var imageDestination = document.getElementById("productListings").getElementById("productListing1").getElementById("productImage");
-    imageDestination.src=imageUrl;*/
-    
-    //try to edit a productListing
-    /*
-    var destination = document.getElementById("productListings");
-    var children = destination.childNodes;
-    for (i = 0; i < children.length; i++){
-        if (children[i].className == "productListingType1"){
-           var targetListingChildren = children[i].children;
-           for (j = 0; j<targetListingChildren.length; j++)
-              if (targetListingChildren[j].className == "productListingImage"){ updateImage(targetListingChildren[j],"https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/2000px-Smiley.svg.png", "a happy smile");
-            }
-        }
-    }*/
-    //try to add a new productListing
-    var destination = document.getElementById("productListings");
-    createNewListing("test1", "https://www.google.com", "It's a thing", "$ 100.00", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/2000px-Smiley.svg.png", "smile!");
+    window.open("./comparepage.html")
 }
 
+function spawnListing(){
+    //try to add a new productListing
+    var destination = document.getElementById("productListings");
+    createNewListing("Product Listing Spawning Test", "https://www.google.com", "Product Description Here", "$ 100.00", "testImage.jpg", "A GPU");
+}
 
 /*
 function compileFilters(filtersToAdd){

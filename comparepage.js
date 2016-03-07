@@ -135,8 +135,12 @@ function addSpecificationRow(specificationName, specificationDescription, col1Sp
     col6.appendChild(createSpecificationBlock("compareColumn6", col6Spec));
 }
 
-function viewSearchPage(){
-    //try to add a specification row to the chart
+function addSpecRow(){
+    //add example spec row to chart.
     
     addSpecificationRow("spec name", "spec desc", "test value", "test value", "test value", "test value", "test value", "test value");
+}
+
+function viewSearchPage(){
+    window.open("./searchpage.html");
 }
