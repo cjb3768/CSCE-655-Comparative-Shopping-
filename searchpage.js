@@ -51,6 +51,8 @@ function getAmazonData(object){
         product.description = object.description;
     }
     
+    strippedProductArray.push(product);
+    
     return product;
 }
 
@@ -79,6 +81,8 @@ function getNeweggData(object){
     if (object.hasOwnProperty("description")){
         product.description = object.description;
     }
+    
+    strippedProductArray.push(product);
     
     return product;
 }
@@ -122,15 +126,16 @@ function loadListingFromMetaMetadata(err, metadataAndMetametaData){
 
 function loadListings(productArray){
     for(var i = 0; i < productArray.length; i++){
+        var productID = i;
         if (productArray[i].hasOwnProperty("amazon_product")){
             var prod = getAmazonData(productArray[i].amazon_product);
            
-            createNewListing(product.name, product.sourcePage, product.description, product.price, product.imageSource, product.name);
+            createNewListing(product.name, product.sourcePage, product.description, product.price, product.imageSource, product.name, productID);
         }
         else if (productArray[i].hasOwnProperty("newegg_product")){
             var prod = getNeweggData(productArray[i].newegg_product);
            
-            createNewListing(product.name, product.sourcePage, product.description, product.price, product.imageSource, product.name);
+            createNewListing(product.name, product.sourcePage, product.description, product.price, product.imageSource, product.name, productID);
         }
        //spawnListing();
     }
@@ -166,7 +171,7 @@ function addButtonBlock(buttonBlockClass, productUrl){
     var purchaseButton = addButton("productListingPurchaseButton", "Buy Product");
     purchaseButton.onclick = function(){goToShopPage(productUrl)};
     var compareButton = addButton("productListingCompareButton", "Add to Compare");
-    compareButton.onclick = function(){addItemToCompare()};
+    compareButton.onclick = function(){addItemToCompare(this)};
     
     buttonBlock.appendChild(purchaseButton);
     buttonBlock.appendChild(compareButton);
@@ -181,9 +186,31 @@ function goToShopPage(shopPageUrl){
 /*
     Adds item to comparison list (handled by cookies, need to do)
 */
-function addItemToCompare(){
+function addItemToCompare(el){
     console.log("add to compare button pressed!")
+   var listingID = el.parentNode.parentNode.id;
+    
+    console.log(listingID);
+    console.log(strippedProductArray[listingID]);
+    addUniqueItemToCompareList(strippedProductArray[listingID]);
+  //var newCompareListItem = compareList.push();
+   
+  // var newCompareListItem = compareList.child(strippedProductArray[listingID].name);
+    //newCompareListItem.set(strippedProductArray[listingID]); //console.log(productArray[listingID]);
     //compareList
+}
+
+function addUniqueItemToCompareList(object){
+    var duplicateExists = false;
+    for (var i = 0; i < compareList.length; i++){
+        if (compareList[i] == object){
+            duplicateExists = true;
+        }
+    }
+    if (!duplicateExists){
+        var newCompareListItem = compareList.push();
+        newCompareListItem.set(object);
+    }
 }
 
 function addTextBlock(textClass, textBody){
@@ -213,10 +240,11 @@ function determineListingType(listingsBlock){
 /*
     Create a new item listing based on passed in information
 */
-function createNewListing(productName, productUrl, productDescription, productPrice, productImageSrc, productImageAlt){
+function createNewListing(productName, productUrl, productDescription, productPrice, productImageSrc, productImageAlt, domID){
     var listingsBlock = document.getElementById("productListings");
-    var newListing = document.createElement("div");
+    var newListing = document.createElement("productListing");
     
+    newListing.id = domID;
     newListing.classList.add(determineListingType(listingsBlock));
     newListing.appendChild(addImage(productImageSrc, productImageAlt, "productListingImage"));
     newListing.appendChild(addTextBlock("productListingName", productName));
