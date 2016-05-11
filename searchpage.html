@@ -206,7 +206,7 @@
     
     <!--product listings-->
     <div id="productListings" class="productListingBlock">
-        <!--<img class="loadingImage" src="./loading.gif"></img>-->
+      <!--
         <div id="productListing1" class="productListingType1">
           
             <img class="productListingImage" src="testImage.jpg" alt="test image">
@@ -312,6 +312,30 @@
                 </div>
             </div>
         </div>
+        -->
     </div>
+    
 </body>
 </html>
+
+<script>
+    var bsService = new BSAutoSwitch(['elkanacmmmdgbnhdjopfdeafchmhecbf', 'gdgmmfgjalcpnakohgcfflgccamjoipd ']);
+
+var productData = new Firebase("https://greenpu.firebaseio.com/ProductMetadata");
+
+var productArray = new Array();
+
+var compareList = new Firebase("https://greenpu.firebaseio.com/ComparisonList");
+
+// Attach an asynchronous callback to read the data at our posts reference
+productData.on("value", function(snapshot) {
+  console.log(snapshot.val());
+  productArray = snapshot.val();
+    console.log ("productArray contains" + snapshot.val());
+  loadListings(productArray);
+}, function (errorObject) {
+  console.log("The read failed: " + errorObject.code);
+});
+    
+    //loadListings();
+</script>

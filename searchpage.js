@@ -7,20 +7,86 @@
 		web-hosted version of bigsemantics
 
 	 */
-
+/*
 var bsService = new BSAutoSwitch(['elkanacmmmdgbnhdjopfdeafchmhecbf', 'gdgmmfgjalcpnakohgcfflgccamjoipd ']);
 
 var productData = new Firebase("https://greenpu.firebaseio.com/ProductMetadata");
+
+var productArray = new Array();
 
 var compareList = new Firebase("https://greenpu.firebaseio.com/ComparisonList");
 
 // Attach an asynchronous callback to read the data at our posts reference
 productData.on("value", function(snapshot) {
   console.log(snapshot.val());
+  productArray = snapshot.val();
+    console.log ("productArray contains" + snapshot.val());
 }, function (errorObject) {
   console.log("The read failed: " + errorObject.code);
 });
-                               
+*/
+function getAmazonData(object){
+    product = new Array();
+    
+    product.price = "Cannot Find Price";
+    product.imageSource = "testImage.jpg";
+    product.sourcePage = "www.amazon.com";
+    product.name = "No name available";
+    product.description = "No description available";
+    
+    
+    if (object.hasOwnProperty("price")){
+        product.price = object.price;
+    }
+    if (object.hasOwnProperty("title")){
+        product.name = object.title;
+    }
+    if (object.hasOwnProperty("location")){
+        product.sourcePage = object.location;
+    }
+    if (object.hasOwnProperty("main_images")){
+        product.imageSource = object.main_images[0].location;
+    }
+    if (object.hasOwnProperty("description")){
+        product.description = object.description;
+    }
+    
+    return product;
+}
+
+function getNeweggData(object){
+    product = new Array();
+    
+    product.price = "Cannot Find Price";
+    product.imageSource = "testImage.jpg";
+    product.sourcePage = "www.newegg.com";
+    product.name = "No name available";
+    product.description = "No description available";
+    product.specifications = new Array();
+    
+    if (object.hasOwnProperty("price")){
+        product.price = object.price;
+    }
+    if (object.hasOwnProperty("title")){
+        product.name = object.title;
+    }
+    if (object.hasOwnProperty("location")){
+        product.sourcePage = object.location;
+    }
+    if (object.hasOwnProperty("main_images")){
+        product.imageSource = object.main_images[0].location;
+    }
+    if (object.hasOwnProperty("description")){
+        product.description = object.description;
+    }
+    
+    return product;
+}
+
+function compressSpecificationTable(object){
+    
+}
+
 function onLoadSemantics(){
     /*
 	Let's break down the arguments.
@@ -52,6 +118,22 @@ function loadListingFromMetaMetadata(err, metadataAndMetametaData){
     catch(e){
         createNewListing("Invalid Product", "", "No product information available", "$ n/a", "./errorImage", "No image available");
         }
+}
+
+function loadListings(productArray){
+    for(var i = 0; i < productArray.length; i++){
+        if (productArray[i].hasOwnProperty("amazon_product")){
+            var prod = getAmazonData(productArray[i].amazon_product);
+           
+            createNewListing(product.name, product.sourcePage, product.description, product.price, product.imageSource, product.name);
+        }
+        else if (productArray[i].hasOwnProperty("newegg_product")){
+            var prod = getNeweggData(productArray[i].newegg_product);
+           
+            createNewListing(product.name, product.sourcePage, product.description, product.price, product.imageSource, product.name);
+        }
+       //spawnListing();
+    }
 }
 
 function updateImage(imageObject, newSrc, newAlt){
@@ -151,7 +233,7 @@ function viewComparison(){
 
 function spawnListing(){
     //try to add a new productListing
-    var destination = document.getElementById("productListings");
+    //var destination = document.getElementById("productListings");
     createNewListing("Product Listing Spawning Test", "https://www.google.com", "Product Description Here", "$ 100.00", "testImage.jpg", "A GPU");
 }
 
