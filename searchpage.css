@@ -196,6 +196,11 @@ body{
     font-size:1.25em;
     /*separate class for subfacets so they can each be read individually*/
 }
+.searchSubFacet:hover{
+    font-size:1.25em;
+    color:orange;
+    /*separate class for subfacets so they can each be read individually*/
+}
 
 .logoLabel{
     color: #d7f4e3;

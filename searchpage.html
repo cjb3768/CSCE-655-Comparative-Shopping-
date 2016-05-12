@@ -67,58 +67,64 @@
     
     <div id="searchFacetBlock" class="searchFacetBlock">
         <span class="searchFacet">
-            Filter 01
+            Price
+        </span>
+        <br>
+        <span class="searchSubFacet" onclick="changePriceFilter('filters','','200')">
+            &lt $200
+        </span>
+        <br>
+        <span class="searchSubFacet" onclick="changePriceFilter('filters','200','400')">
+            $200 - $400
+        </span>
+        <br>
+        <span id="subfacet01c" class="searchSubFacet" onclick="changePriceFilter('filters','400','')">
+            &gt $400
+        </span>
+        <br>
+        
+        <br>
+        <span class="searchFacet">
+            Brand
+        </span>
+        <br>
+        <span class="searchSubFacet" onclick="changeFilterContext('filters','brand','EVGA')">
+            EVGA
+        </span>
+        <br>
+        <span class="searchSubFacet" onclick="changeFilterContext('filters','brand','Gigabyte')">
+            Gigabyte
+        </span>
+        <br>
+        <span class="searchSubFacet" onclick="changeFilterContext('filters','brand','MSI')">
+            MSI
+        </span>
+        <br>
+         <span class="searchSubFacet" onclick="changeFilterContext('filters','brand','SAPPHIRE')">
+            SAPPHIRE
+        </span>
+        <br>
+        <span class="searchSubFacet" onclick="changeFilterContext('filters','brand','XFX')">
+            XFX
+        </span>
+        <br>
+        
+        <br>
+        <span class="searchFacet">
+            Chipset Manufacturer
         </span>
         <br>
         <span class="searchSubFacet">
-            Filter 01a
+            AMD
         </span>
         <br>
         <span class="searchSubFacet">
-            Filter 01b
-        </span>
-        <br>
-        <span id="subfacet01c" class="searchSubFacet">
-            Filter 01c
+            NVIDIA
         </span>
         <br>
         <br>
         <span class="searchFacet">
-            Filter 02
-        </span>
-        <br>
-        <span class="searchSubFacet">
-            Filter 02a
-        </span>
-        <br>
-        <span class="searchSubFacet">
-            Filter 02b
-        </span>
-        <br>
-        <span class="searchSubFacet">
-            Filter 02c
-        </span>
-        <br>
-        <br>
-        <span class="searchFacet">
-            Filter 03
-        </span>
-        <br>
-        <span class="searchSubFacet">
-            Filter 03a
-        </span>
-        <br>
-        <span class="searchSubFacet">
-            Filter 03b
-        </span>
-        <br>
-        <span class="searchSubFacet">
-            Filter 03c
-        </span>
-        <br>
-        <br>
-        <span class="searchFacet">
-            Filter 04
+            Filter 4
         </span>
         <br>
         <span class="searchSubFacet">
@@ -329,8 +335,13 @@ var strippedProductArray = new Array();
 
 var compareList = new Firebase("https://greenpu.firebaseio.com/ComparisonList");
     
-var filters = new FilterContext({"minPrice":"80.00"});
+var filters = new FilterContext({});
 
+//changeFilterContext(filters, "minPrice", '80.00');
+//changeFilterContext(filters, "manufacturer","NVIDIA");
+//changeFilterContext(filters, "Memory Size", "2GB");
+//changeFilterContext(filters, "brand", "EVGA");
+    
 // Attach an asynchronous callback to read the data at our posts reference
 productData.on("value", function(snapshot) {
   console.log(snapshot.val());

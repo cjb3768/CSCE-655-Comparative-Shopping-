@@ -50,7 +50,10 @@ function getProductData(object){
     if (object.hasOwnProperty("description")){
         product.description = object.description;
     }
-    if(object.hasOwnProperty("specifications_table")){
+    if(object.hasOwnProperty("specifications")){
+        product.specifications = object.specifications;
+    }
+    else if(object.hasOwnProperty("specifications_table")){
         product.specifications = compressSpecificationTable(object.specifications_table)
     }
     strippedProductArray.push(product);
@@ -208,7 +211,7 @@ function filterByPriceRange(product,filterContext){
 
 function filterByBrand(product, filterContext){
     if (filterContext.brand != ""){
-        if (product[specifications]["Brand"] != filterContext.brand)
+        if (product.specifications["Brand"] != filterContext.brand)
             return false;
         return true;
     }
@@ -220,7 +223,7 @@ function filterByBrand(product, filterContext){
 
 function filterByManufacturer(product, filterContext){
     if (filterContext.manufacturer != ""){
-        if (product[specifications]["Chipset Manufacturer"] != filterContext.manufacturer)
+        if (product.specifications["Chipset Manufacturer"] != filterContext.manufacturer)
             return false;
         return true;
     }
@@ -232,7 +235,7 @@ function filterByManufacturer(product, filterContext){
 
 function filterByGPU(product, filterContext){
     if (filterContext.gpu != ""){
-        if (product[specifications]["GPU"] != filterContext.gpu)
+        if (product.specifications["GPU"] != filterContext.gpu)
             return false;
         return true;
     }
@@ -244,7 +247,7 @@ function filterByGPU(product, filterContext){
 
 function filterByMemorySize(product, filterContext){
     if (filterContext.memory != ""){
-        if (product[specifications]["MemorySize"] != filterContext.memory)
+        if (product.specifications["MemorySize"] != filterContext.memory)
             return false;
         return true;
     }
@@ -342,6 +345,16 @@ function spawnListing(){
     //try to add a new productListing
     //var destination = document.getElementById("productListings");
     createNewListing("Product Listing Spawning Test", "https://www.google.com", "Product Description Here", "$ 100.00", "testImage.jpg", "A GPU");
+}
+
+function changePriceFilter(filterContext, min, max){
+    changeFilterContext(filterContext, "minPrice", min);
+    changeFilterContext(filterContext, "maxPrice", max);
+}
+
+function changeFilterContext(filterContext, filter, value){
+    filterContext[filter] = value;
+    alert("FilterContext " + filter + " changed!");
 }
 
 /*
