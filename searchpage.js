@@ -108,18 +108,22 @@ function loadListingFromMetaMetadata(err, metadataAndMetametaData){
         }
 }
 
-function loadListings(productArray){
+function loadListings(productArray, filterContext){
     for(var i = 0; i < productArray.length; i++){
         var productID = i;
         if (productArray[i].hasOwnProperty("amazon_product")){
             var prod = getProductData(productArray[i].amazon_product);
            
-            createNewListing(product.name, product.sourcePage, product.description, product.price, product.imageSource, product.name, productID);
+           if (filterProduct(prod,filterContext)){
+               createNewListing(product.name, product.sourcePage, product.description, product.price, product.imageSource, product.name, productID);
+           } 
         }
         else if (productArray[i].hasOwnProperty("newegg_product")){
             var prod = getProductData(productArray[i].newegg_product);
            
-            createNewListing(product.name, product.sourcePage, product.description, product.price, product.imageSource, product.name, productID);
+                if (filterProduct(prod,filterContext)){
+               createNewListing(product.name, product.sourcePage, product.description, product.price, product.imageSource, product.name, productID);
+           } 
         }
        //spawnListing();
     }
@@ -160,6 +164,94 @@ function addButtonBlock(buttonBlockClass, productUrl){
     buttonBlock.appendChild(purchaseButton);
     buttonBlock.appendChild(compareButton);
     return buttonBlock;
+}
+
+function filterProduct(product, filterContext){
+    var priceFilter =  filterByPriceRange(product, filterContext);
+    var brandFilter = filterByBrand(product, filterContext);
+    var manufacturerFilter = filterByManufacturer(product, filterContext);
+    var gpuFilter = filterByGPU(product, filterContext);
+    var memoryFilter = filterByMemorySize(product, filterContext);
+    
+    return (priceFilter && brandFilter && manufacturerFilter && gpuFilter && memoryFilter);
+}
+
+function filterByMaxPrice(product, filterContext){
+    if (filterContext.maxPrice != ""){
+        if (parseFloat(product.price) > parseFloat(filterContext.maxPrice))
+            return false;
+        return true;
+    }
+    else{
+        //no max price set; allow all
+        return true;
+    }
+}
+
+function filterByMinPrice(product, filterContext){
+    if (filterContext.minPrice != ""){
+        if (parseFloat(product.price) < parseFloat(filterContext.minPrice))
+            return false;
+        return true;
+    }
+    else{
+        //no min price set; allow all
+        return true;
+    }
+}
+
+function filterByPriceRange(product,filterContext){
+    var highFilter = filterByMaxPrice(product,filterContext);
+    var lowFilter = filterByMinPrice(product,filterContext);
+    return (highFilter && lowFilter);
+}
+
+function filterByBrand(product, filterContext){
+    if (filterContext.brand != ""){
+        if (product[specifications]["Brand"] != filterContext.brand)
+            return false;
+        return true;
+    }
+    else{
+        //no brand specified, allow all
+        return true;
+    }
+}
+
+function filterByManufacturer(product, filterContext){
+    if (filterContext.manufacturer != ""){
+        if (product[specifications]["Chipset Manufacturer"] != filterContext.manufacturer)
+            return false;
+        return true;
+    }
+    else{
+        //no manufacturer specified, allow all
+        return true;
+    }
+}
+
+function filterByGPU(product, filterContext){
+    if (filterContext.gpu != ""){
+        if (product[specifications]["GPU"] != filterContext.gpu)
+            return false;
+        return true;
+    }
+    else{
+        //no gpu specified, allow all
+        return true;
+    }
+}
+
+function filterByMemorySize(product, filterContext){
+    if (filterContext.memory != ""){
+        if (product[specifications]["MemorySize"] != filterContext.memory)
+            return false;
+        return true;
+    }
+    else{
+        //no memory specified, allow all
+        return true;
+    }
 }
 
 function goToShopPage(shopPageUrl){
@@ -259,10 +351,3 @@ function compileFilters(filtersToAdd){
     }
 }
 */
-function updateSearchFilters(){
-    
-}
-
-function runSearch(){
-    
-}

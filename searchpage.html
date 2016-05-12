@@ -31,6 +31,7 @@
     <script type="text/javascript" src="./searchpage.js"></script>
     
     <link rel="stylesheet" type="text/css" href="searchpage.css">
+    <script type="text/javascript" src="./filtercontext.js"></script>
 </head>
     
 <body onload="onLoadSemantics()">
@@ -327,6 +328,8 @@ var productArray = new Array();
 var strippedProductArray = new Array();
 
 var compareList = new Firebase("https://greenpu.firebaseio.com/ComparisonList");
+    
+var filters = new FilterContext({"minPrice":"80.00"});
 
 // Attach an asynchronous callback to read the data at our posts reference
 productData.on("value", function(snapshot) {
@@ -334,7 +337,7 @@ productData.on("value", function(snapshot) {
   productArray = snapshot.val();
     console.log ("productArray contains" + snapshot.val());
   strippedProductArray = [];
-  loadListings(productArray);
+  loadListings(productArray, filters);
 }, function (errorObject) {
   console.log("The read failed: " + errorObject.code);
 });
