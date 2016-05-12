@@ -59,7 +59,20 @@ function getProductData(object){
 }
 
 function compressSpecificationTable(object){
+    var specs = new Array();
     
+    for (var i = 0; i < object.length; i++){
+        var specSet = object[i].specifications;
+        var key, val;
+        for (var j = 0; j < specSet.length; j++){
+            
+            key = specSet[j]["name"];
+            val = specSet[j]["value"];
+            specs[key] = val;
+        
+        }
+    }
+    return specs;
 }
 
 function onLoadSemantics(){
