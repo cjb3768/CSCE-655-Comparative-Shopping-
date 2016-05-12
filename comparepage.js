@@ -117,6 +117,10 @@ function createSpecificationChartBlock(specificationName, specificationDescripti
     
 }
 
+function addProductColumn(columnNumber){
+    
+}
+
 function addSpecificationRow(specificationName, specificationDescription, col1Spec, col2Spec, col3Spec, col4Spec, col5Spec, col6Spec){
     var specCol = document.getElementById("specificationList");
     var col1 = document.getElementById("compareColumn1");

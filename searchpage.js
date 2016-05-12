@@ -25,43 +25,12 @@ productData.on("value", function(snapshot) {
   console.log("The read failed: " + errorObject.code);
 });
 */
-function getAmazonData(object){
+function getProductData(object){
     product = new Array();
     
     product.price = "Cannot Find Price";
     product.imageSource = "testImage.jpg";
     product.sourcePage = "www.amazon.com";
-    product.name = "No name available";
-    product.description = "No description available";
-    
-    
-    if (object.hasOwnProperty("price")){
-        product.price = object.price;
-    }
-    if (object.hasOwnProperty("title")){
-        product.name = object.title;
-    }
-    if (object.hasOwnProperty("location")){
-        product.sourcePage = object.location;
-    }
-    if (object.hasOwnProperty("main_images")){
-        product.imageSource = object.main_images[0].location;
-    }
-    if (object.hasOwnProperty("description")){
-        product.description = object.description;
-    }
-    
-    strippedProductArray.push(product);
-    
-    return product;
-}
-
-function getNeweggData(object){
-    product = new Array();
-    
-    product.price = "Cannot Find Price";
-    product.imageSource = "testImage.jpg";
-    product.sourcePage = "www.newegg.com";
     product.name = "No name available";
     product.description = "No description available";
     product.specifications = new Array();
@@ -81,7 +50,9 @@ function getNeweggData(object){
     if (object.hasOwnProperty("description")){
         product.description = object.description;
     }
-    
+    if(object.hasOwnProperty("specifications_table")){
+        product.specifications = compressSpecificationTable(object.specifications_table)
+    }
     strippedProductArray.push(product);
     
     return product;
@@ -128,12 +99,12 @@ function loadListings(productArray){
     for(var i = 0; i < productArray.length; i++){
         var productID = i;
         if (productArray[i].hasOwnProperty("amazon_product")){
-            var prod = getAmazonData(productArray[i].amazon_product);
+            var prod = getProductData(productArray[i].amazon_product);
            
             createNewListing(product.name, product.sourcePage, product.description, product.price, product.imageSource, product.name, productID);
         }
         else if (productArray[i].hasOwnProperty("newegg_product")){
-            var prod = getNeweggData(productArray[i].newegg_product);
+            var prod = getProductData(productArray[i].newegg_product);
            
             createNewListing(product.name, product.sourcePage, product.description, product.price, product.imageSource, product.name, productID);
         }
@@ -241,6 +212,9 @@ function determineListingType(listingsBlock){
     Create a new item listing based on passed in information
 */
 function createNewListing(productName, productUrl, productDescription, productPrice, productImageSrc, productImageAlt, domID){
+    
+    var price = "$" + productPrice;
+    
     var listingsBlock = document.getElementById("productListings");
     var newListing = document.createElement("productListing");
     
@@ -249,7 +223,7 @@ function createNewListing(productName, productUrl, productDescription, productPr
     newListing.appendChild(addImage(productImageSrc, productImageAlt, "productListingImage"));
     newListing.appendChild(addTextBlock("productListingName", productName));
     newListing.appendChild(addTextBlock("productListingBodyText", productDescription));
-    newListing.appendChild(addTextBlock("productListingPrice", productPrice));
+    newListing.appendChild(addTextBlock("productListingPrice", price));
     newListing.appendChild(addButtonBlock("productListingButtonBlock", productUrl));
     
     listingsBlock.appendChild(newListing);

@@ -333,6 +333,7 @@ productData.on("value", function(snapshot) {
   console.log(snapshot.val());
   productArray = snapshot.val();
     console.log ("productArray contains" + snapshot.val());
+  strippedProductArray = [];
   loadListings(productArray);
 }, function (errorObject) {
   console.log("The read failed: " + errorObject.code);
